@@ -1,0 +1,68 @@
+---
+description: RabbitMQ, cron, Socket.IO, email, S3, and env config for the employee service.
+globs:
+  - "src/**/*.js"
+  - "src/**/*.html"
+alwaysApply: false
+---
+
+# Integrations and config
+
+Express service under `src/` only.
+
+## RabbitMQ
+
+Code lives in `src/rabbit-mq/`. The connection is `config/rabbit-mq.js`.
+
+Reuse one channel. Manual ack (`noAck: false`). Durable queues. Validate the payload before processing. On success `ack`. On failure `nack(msg, false, false)`. RPC replies include `correlationId` and `replyTo`.
+
+```javascript
+channel.consume(queue, async (msg) => {
+  try {
+    const data = JSON.parse(msg.content.toString());
+    // process…
+    channel.ack(msg);
+  } catch (error) {
+    logger.error('Error processing message:', JSON.stringify(error));
+    channel.nack(msg, false, false);
+  }
+}, { noAck: false });
+```
+
+Do not auto-ack, and do not ack outside try/catch.
+
+Declare the queue with a dead-letter exchange. Keep `nack(msg, false, false)` so a failed message is not requeued in a loop. The dead-letter queue holds it. Do not nack into a queue that has no dead-letter destination.
+
+## Cron
+
+Jobs live in `src/crons/` and register through `src/crons/index.js`, which `index.js` requires. Every scheduled callback has try/catch and logs the failure.
+
+```javascript
+cron.schedule('* * * * *', async () => {
+  try {
+    await updateNonCancelledOrders();
+  } catch (error) {
+    logger.error('Cron job failed:', error);
+  }
+});
+```
+
+## Socket.IO
+
+Initialized in `app.js` as `global.io`, path `/empService`. Verify the JWT with `verify(token, config.jwt.secret)` before joining. Join a `socketId` room and emit with `io.to(room).emit(...)`. Persist the connection on the `Socket` model and update it on disconnect.
+
+```javascript
+io.to(`${storeId}-manager`).emit('orders', storeOrders);
+```
+
+Do not `io.emit` the full dataset, and do not skip the token check on connection.
+
+## Email and uploads
+
+Send mail through `email.service.js` and `mail-templates/`. The transport is `config.email.smtp`. Verify the connection outside tests. Do not hardcode HTML in a controller.
+
+Uploads go through `parser.service.js`: formidable, a size limit, and a streaming upload to S3. ACL is private. Serve a short-lived presigned URL. Check type and size on the server.
+
+## Config
+
+Every secret comes from the environment and is validated with Joi in `config/config.js`. Read `config.jwt.secret` and `config.mongoose.url`. Never inline a secret. `.env` stays gitignored. When `NODE_ENV === 'test'`, the database URL gets a `-test` suffix.

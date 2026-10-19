@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="370.166" height="266.938" viewBox="0 0 370.166 266.938">
+                                <defs>
+                                    <style>
+                                    .a {
+                                        fill: #b2b2b2;
+                                    }
+
+                                    .b {
+                                        fill: #fff;
+                                        font-size: 25px;
+                                        font-family: Poppins-SemiBold, Poppins;
+                                        font-weight: 600;
+                                    }
+
+                                    .c {
+                                        filter: url(#a);
+                                    }
+                                    </style>
+                                    <filter id="a" x="0" y="0" width="370.166" height="266.938" filterUnits="userSpaceOnUse">
+                                        <feOffset dx="12" dy="8" input="SourceAlpha"></feOffset>
+                                        <feGaussianBlur stdDeviation="12.5" result="b"></feGaussianBlur>
+                                        <feFlood flood-opacity="0.149"></feFlood>
+                                        <feComposite operator="in" in2="b"></feComposite>
+                                        <feComposite in="SourceGraphic"></feComposite>
+                                    </filter>
+                                </defs>
+                                <g transform="translate(-1919.5 -479.5)">
+                                    <g class="c" transform="matrix(1, 0, 0, 1, 1919.5, 479.5)">
+                                        <path class="a" d="M1426.006,764.107c0-25.277-20.106-45.679-44.937-45.679a42.33,42.33,0,0,0-6.49.495c-.654-20-19.4-36.091-42.41-36.091a47.807,47.807,0,0,0-20.117,4.457C1303.227,670.506,1284.9,659,1263.658,659c-25.563,0-46.982,16.814-52.493,39.344a33.983,33.983,0,0,0-15.259-3.583,34.746,34.746,0,0,0-32.514,23.079,45.635,45.635,0,0,0-32.552,44.009c0,25.277,20.106,45.7,44.9,45.7a48.074,48.074,0,0,0,10.056-1.1c4.9,15.666,21.353,27.216,40.871,27.216a45.228,45.228,0,0,0,31.673-12.43c8.484,17.556,27.3,29.706,49.108,29.706a54.857,54.857,0,0,0,44.366-21.859,33.366,33.366,0,0,0,9.094,1.258,34.567,34.567,0,0,0,32.1-22.117A45.582,45.582,0,0,0,1426.006,764.107Zm-90.117-7.193a2.376,2.376,0,0,0,.846-.093,5.511,5.511,0,0,1-.044.61A6.751,6.751,0,0,0,1335.889,756.914Z" transform="translate(-1105.34 -629.5)"></path>
+                                    </g><text class="b" transform="translate(2070 597)">
+                                        <tspan x="-50" y="0">COMMUNITY</tspan>
+                                        <tspan x="-64" y="36">EMPOWERMENT</tspan>
+                                    </text>
+                                </g>
+                            </svg>

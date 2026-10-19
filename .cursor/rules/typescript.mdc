@@ -1,0 +1,17 @@
+---
+alwaysApply: false
+---
+# TypeScript
+
+Prefer an `interface` for an object shape. Use a union for a fixed set of variants. Optional props use `?`. Do not add `| undefined` unless the value is deliberately both missing and present.
+
+```tsx
+interface CardProps {
+  title: string;
+  href?: string;
+}
+
+type Status = "idle" | "loading" | "error";
+```
+
+Type form inputs and API payloads. Never `any`.

@@ -1,0 +1,18 @@
+---
+alwaysApply: false
+---
+# Errors and logging
+
+Express service under `src/` only.
+
+`utils/ApiError.js` carries `statusCode` and `isOperational`. `utils/catchAsync.js` forwards a rejected promise to `next(err)`.
+
+Register `errorConverter`, then `errorHandler`, after the routes. In production, a non-operational error returns a generic 5xx message. Do not send the stack to the client.
+
+Log with Winston from `config/logger`. Use `logger.info` and `logger.error` for application events. Do not use `console.log` for production app logs. Log ids and safe fields only.
+
+```javascript
+const logger = require('../config/logger');
+logger.info('Connected to MongoDB');
+logger.error('Error processing message:', JSON.stringify(error));
+```

@@ -1,0 +1,63 @@
+---
+alwaysApply: false
+---
+# Backend structure
+
+Node.js / Express / MongoDB employee microservice under `src/`. Do not apply these rules to the Next.js app. Use CommonJS (`require` / `module.exports`). Do not add ES modules unless the whole service migrates.
+
+## Stack
+
+Express 4.x, Mongoose 8.x. The runtime is Node >= 16.20.1, because Mongoose 8 does not run on the older `>= 12` engines floor. Keep every other dependency. Auth is Passport JWT (`passport` + `passport-jwt`). Validation is `@hapi/joi`. Security is helmet, xss-clean, express-mongo-sanitize, cors, express-rate-limit. Also winston, morgan, amqplib, socket.io, nodemailer, AWS S3 SDK, node-cron, http-status, lodash, moment.
+
+## Layout
+
+```
+src/
+├── app.js                 # Express app, middleware order, Socket.IO, errors
+├── index.js               # DB connect, HTTP listen, graceful shutdown
+├── config/                # config.js, logger.js, passport.js, roles.js, morgan.js, rabbit-mq.js
+├── controllers/           # *.controller.js
+├── routes/v1/             # *.route.js → mounted at /v1
+├── models/                # *.model.js + index.js
+├── services/              # *.service.js + index.js
+├── middlewares/           # auth.js, validate.js, error.js, rateLimiter.js, adminAuth.js
+├── validations/           # *.validation.js, custom.validation.js
+├── utils/                 # ApiError.js, catchAsync.js, query.utils.js
+├── helpers/               # *.helper.js
+├── crons/                 # scheduled jobs
+├── rabbit-mq/             # consumers / producers
+└── mail-templates/        # email HTML helpers
+```
+
+## Naming
+
+| Kind | Pattern | Example |
+|---|---|---|
+| Controller | `*.controller.js` | `user.controller.js` |
+| Route | `*.route.js` | `user.route.js` |
+| Model | `*.model.js` | `user.model.js` |
+| Service | `*.service.js` | `token.service.js` |
+| Validation | `*.validation.js` | `user.validation.js` |
+| Functions / vars | camelCase | `createUser`, `employeeId` |
+| Constants | UPPER_SNAKE | `MAX_FILE_SIZE` |
+
+## Imports and async
+
+Order: built-ins and third-party, then local utils and helpers, then models and services.
+
+```javascript
+const httpStatus = require('http-status');
+const { pick } = require('lodash');
+
+const catchAsync = require('../utils/catchAsync');
+const ApiError = require('../utils/ApiError');
+const { getQueryOptions } = require('../utils/query.utils');
+const { generateEmployeeId, generatedPassword } = require('../helpers/user.helper');
+
+const { User } = require('../models');
+const { emailService } = require('../services');
+```
+
+Always `async/await`. Do not mix `.then()` chains inside controllers.
+
+Throw `new ApiError(httpStatus.NOT_FOUND, 'User not found')`. Do not `throw 'User not found'` or `throw new Error(...)` with no status code.

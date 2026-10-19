@@ -1,0 +1,64 @@
+---
+alwaysApply: false
+---
+# Backend checklist
+
+Express service under `src/` only. Copy a nearby controller, route, and validation as the template. Keep the change scoped. Apply a resilience term when the problem needs it. Do not add unused infra.
+
+## Do not
+
+| Don't | Do instead |
+|---|---|
+| Mix validation or auth into the controller | Route order is auth, then validate, then controller |
+| Put security middleware after the routes | helmet, xss, and sanitize run before `/v1` |
+| Send a raw Mongoose doc | `user.transform()` |
+| Skip `catchAsync` | Wrap every async controller |
+| Use a magic status number | `httpStatus.NOT_FOUND` |
+| Ignore a null find | Throw `ApiError` NOT_FOUND |
+| Validate ad hoc | Joi plus `validate()` |
+| Log a password, token, or body | Log an id or another safe field |
+| `User.create(req.body)` without validate | A validated route, then the business checks |
+| Use the raw Mongo driver | A Mongoose model |
+| Query inside a loop | `populate` or an aggregation |
+| Hardcode a secret | `config` from the environment |
+| `console.log` a production event | Winston `logger` |
+| Skip the error middleware | 404, then converter, then handler, after the routes |
+| Use an unvalidated ObjectId | `custom(objectId)` on params |
+| CORS `*` on the production API | An explicit allowlist |
+| Send a stack in production | A generic message for a non-operational error |
+| Commit `.env` | Leave it in `.gitignore` |
+| `User.find(req.body)` | `pick` an allowlist |
+| Consume RabbitMQ with auto-ack or no try/catch | Manual ack and `nack(msg, false, false)` |
+| `nack` with nowhere for the message to go | A dead-letter queue on that durable queue |
+| Run cron without try/catch | Log the failure |
+| Accept a Socket.IO connection with no JWT | Verify the token, then join the room |
+| Return an unbounded list | `getQueryOptions` and pagination |
+
+## Task lookup
+
+| Task | How |
+|---|---|
+| New API | `routes/v1/*.route.js`, then register it in `routes/v1/index.js` |
+| Auth | `auth()` or `auth('right')`. Rights come from `req.accessList`, and only the gateway may set `x-access-list` |
+| Validate | `validate(schema)` and `validations/*.validation.js` |
+| Controller error | `throw new ApiError(httpStatus.X, 'msg')` inside `catchAsync` |
+| Pagination | `getQueryOptions(req.query)` |
+| List response | `{ data, pagination: { total, page, totalPages } }` |
+| Single resource | `res.status(httpStatus.CREATED).send(doc.transform())` |
+| Models | `require('../models')` |
+| Services | `require('../services')` |
+| Config | `require('../config/config')` |
+| Resilience | Circuit breaker, bulkhead, saga, timeouts. See the resilience rule |
+| Ops | Redis, Bull, Prometheus, OpenTelemetry, Pact, chaos, feature flags, blue-green, ADR. See the resilience rule |
+
+## Bootstrap
+
+morgan, helmet, json and urlencoded, xss, mongoSanitize, compression, header parse, CORS, passport, `/v1`, 404, errorConverter, errorHandler.
+
+## Essentials
+
+1. Match the existing file names and CommonJS.
+2. Do not skip auth or validate on a protected write.
+3. Do not return a password or a secret.
+4. Copy the nearest controller, route, and validation.
+5. Keep the diff inside the task.

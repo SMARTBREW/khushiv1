@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="343.804" height="242.451" viewBox="0 0 343.804 242.451">
+                                <defs>
+                                    <style>
+                                    .a {
+                                        fill: #b2b2b2;
+                                    }
+
+                                    .b {
+                                        fill: #fff;
+                                        font-size: 25px;
+                                        font-family: Poppins-SemiBold, Poppins;
+                                        font-weight: 600;
+                                    }
+
+                                    .c {
+                                        filter: url(#a);
+                                    }
+                                    </style>
+                                    <filter id="a" x="0" y="0" width="343.804" height="242.451" filterUnits="userSpaceOnUse">
+                                        <feOffset dx="20" dy="8" input="SourceAlpha"></feOffset>
+                                        <feGaussianBlur stdDeviation="9" result="b"></feGaussianBlur>
+                                        <feFlood flood-opacity="0.149"></feFlood>
+                                        <feComposite operator="in" in2="b"></feComposite>
+                                        <feComposite in="SourceGraphic"></feComposite>
+                                    </filter>
+                                </defs>
+                                <g transform="translate(-450 -546)">
+                                    <g class="c" transform="matrix(1, 0, 0, 1, 450, 546)">
+                                        <path class="a" d="M1420.644,762.2c0-24.818-19.741-44.85-44.121-44.85a41.557,41.557,0,0,0-6.372.486c-.642-19.638-19.045-35.435-41.64-35.435a46.937,46.937,0,0,0-19.751,4.376C1300.1,670.3,1282.1,659,1261.246,659c-25.1,0-46.129,16.509-51.54,38.629a33.364,33.364,0,0,0-14.982-3.518,34.115,34.115,0,0,0-31.923,22.66,44.806,44.806,0,0,0-31.961,43.21c0,24.817,19.741,44.866,44.089,44.866a47.193,47.193,0,0,0,9.873-1.079c4.812,15.381,20.965,26.722,40.129,26.722a44.407,44.407,0,0,0,31.1-12.2c8.33,17.237,26.8,29.166,48.216,29.166a53.861,53.861,0,0,0,43.56-21.462,32.753,32.753,0,0,0,8.929,1.236,33.939,33.939,0,0,0,31.513-21.715A44.755,44.755,0,0,0,1420.644,762.2Zm-88.48-7.062a2.335,2.335,0,0,0,.831-.092,5.371,5.371,0,0,1-.043.6A6.627,6.627,0,0,0,1332.164,755.135Z" transform="translate(-1123.84 -640)"></path>
+                                    </g><text class="b" transform="translate(602 658)">
+                                        <tspan x="-60" y="0">SPREADING </tspan>
+                                        <tspan x="-41.79" y="36">SMILES</tspan>
+                                    </text>
+                                </g>
+                            </svg>

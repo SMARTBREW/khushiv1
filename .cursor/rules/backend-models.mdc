@@ -1,0 +1,46 @@
+---
+alwaysApply: false
+---
+# Models, services, helpers
+
+Express service under `src/` only.
+
+## Models
+
+Use Mongoose only. Do not call `mongoose.connection.db.collection(...)`.
+
+Import through the barrel: `const { User, Token } = require('../models')`.
+
+Schemas own validation, timestamps, and `ref`. Load relations with `.populate()`. Put existence checks on the model as statics, such as `User.isMobileTaken`.
+
+```javascript
+mobile: {
+  type: String,
+  required: true,
+  unique: true,
+  trim: true,
+  minlength: 10,
+},
+user: { type: mongoose.SchemaTypes.ObjectId, ref: 'User', required: true },
+```
+
+Do not query inside a loop. Use `.populate()` or an aggregation.
+
+## Services
+
+`src/services/` holds reused or non-trivial work: tokens, email, the S3 parser, assigned-order aggregations.
+
+Export each service from `services/index.js` and import from that barrel.
+
+```javascript
+module.exports.tokenService = require('./token.service');
+module.exports.emailService = require('./email.service');
+
+const { tokenService, emailService } = require('../services');
+```
+
+Prefer the index import when the module is exported there.
+
+## Helpers
+
+`src/helpers/` holds pure utilities, such as the employee id sequence and password generation in `user.helper.js`.

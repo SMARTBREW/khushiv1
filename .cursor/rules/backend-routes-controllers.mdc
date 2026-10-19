@@ -1,0 +1,66 @@
+---
+alwaysApply: false
+---
+# Routes and controllers
+
+Express service under `src/` only.
+
+## Routes
+
+Order on every protected route: `auth(...rights)` → `validate(schema)` → controller.
+
+Register the module in `src/routes/v1/index.js` and mount it under `/v1`.
+
+```javascript
+router
+  .route('/admin')
+  .post(auth('create-employees'), validate(userValidation.createUser), userController.createUser)
+  .get(auth('read-employees'), validate(userValidation.getUsers), userController.getUsers);
+
+router.post('/login', validate(authValidation.login), authController.login);
+```
+
+Do not put the controller before auth or validate. Do not skip `validate`.
+
+Rights come from `req.accessList` (parsed from the `x-access-list` header in `app.js`). Do not trust the client role alone. Only the gateway may set that header. Strip a client-supplied `x-access-list` on any request that did not come from the gateway. A browser or public caller cannot grant itself rights by sending the header.
+
+## Controllers
+
+- Wrap every async handler with `catchAsync`.
+- Throw `ApiError` for expected failures.
+- Respond with `model.transform()`. Never send a raw doc that includes a password.
+- Use `httpStatus` constants, not magic numbers.
+- Use `getQueryOptions(req.query)` for pagination and sort.
+- Use `pick` for allowlisted query and body fields.
+- Keep the controller thin. A simple DB check can stay. Heavy logic goes to a service or helper.
+
+```javascript
+const createUser = catchAsync(async (req, res) => {
+  if (await User.isMobileTaken(req.body.mobile)) {
+    throw new ApiError(httpStatus.BAD_REQUEST, 'Mobile already taken');
+  }
+  const employeeId = await generateEmployeeId();
+  const password = generatedPassword();
+  const user = await User.create({ ...req.body, employeeId, password, createdBy: req.user._id });
+  res.status(httpStatus.CREATED).send(user.transform());
+});
+
+const getUsers = catchAsync(async (req, res) => {
+  const filter = pick(req.query, ['name', 'role_id', 'store_id']);
+  const options = getQueryOptions(req.query);
+  const [users, total] = await Promise.all([
+    User.find(filter, null, options).populate('createdBy', 'name email mobile'),
+    User.countDocuments(filter),
+  ]);
+  res.send({
+    data: users.map((u) => u.transform()),
+    pagination: {
+      total,
+      page: options.skip / options.limit + 1,
+      totalPages: Math.ceil(total / options.limit),
+    },
+  });
+});
+```
+
+Do not hand-write try/catch and `res.status(500)`, and do not `res.send(user)` on a raw document. A missing record throws `ApiError` `NOT_FOUND`. `User.create(req.body)` and `User.find(req.body)` are not allowed. The route is validated first, then business checks run, and filters use `pick`.

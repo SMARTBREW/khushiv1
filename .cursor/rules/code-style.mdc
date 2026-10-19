@@ -1,0 +1,43 @@
+---
+alwaysApply: false
+---
+# Code style
+
+Import order: Next.js, React, third-party, local components, constants.
+
+Components are default-exported functions.
+
+```tsx
+export default function About() {
+  return (
+    <>
+      <section className="mt-24 px-[4.5rem] md:px-[8vw]">...</section>
+    </>
+  );
+}
+```
+
+- Simple props are inline. Complex props use an `interface`. Never `any`.
+- Multiple roots use `<>...</>`. Do not add a wrapper `div` only to group sections.
+- Responsive visibility is `hidden md:block` or `block md:hidden`. Do not branch layout on an `isMobile` flag.
+- Lists use a stable id as `key`. An index is allowed only when the list is static and never reordered.
+
+## Images
+
+Always `next/image`, with `alt`, and `width`/`height` or `fill`.
+
+```tsx
+<Image src="/logo.png" alt="Glamsfyt logo" width={405} height={286} className="w-[25.313rem]" />
+```
+
+## Navigation
+
+Prefer `<Link>` over `router.push`. A CTA that opens another page is a `<Link>` styled as a button. Do not nest a `<button>` inside a `<Link>`.
+
+```tsx
+<Link href="/solutions" className="mt-8 inline-block rounded-2xl bg-[#FCC010] px-[3.75rem] py-[1.125rem] text-black">
+  Learn More
+</Link>
+```
+
+A page that already wraps a `<button>` in `<Link>` stays that way until the task is to change that control. New CTAs use the styled `Link`. A `<button type="button">` is for an action that does not navigate.

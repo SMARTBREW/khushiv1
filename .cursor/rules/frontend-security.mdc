@@ -1,0 +1,13 @@
+---
+alwaysApply: false
+---
+# Frontend security
+
+These rules are client-only. CSP, middleware, CORS, rate limiting, Zod schemas, and the database stay on the server.
+
+1. Never pass unsanitized user or API HTML to `dangerouslySetInnerHTML`. Render text as React children. If HTML is required, sanitize it with DOMPurify first.
+2. Client code may read `NEXT_PUBLIC_*` only. Never log a secret or the whole `process.env`.
+3. `localStorage` and `sessionStorage` may hold theme or language. They must not hold tokens, passwords, or personal data.
+4. Do not send the user to an unchecked external URL. Allowlist it, or require an `https:` protocol.
+5. Inputs set a reasonable `maxLength`. Sensitive fields set the right `type` and `autoComplete`.
+6. Do not add a package unless the UI needs it. Prefer a library already in `package.json`.

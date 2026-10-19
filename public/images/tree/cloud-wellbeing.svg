@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="312.904" height="229.702" viewBox="0 0 312.904 229.702">
+                                <defs>
+                                    <style>
+                                    .a {
+                                        fill: #b2b2b2;
+                                    }
+
+                                    .b {
+                                        fill: #fff;
+                                        font-size: 25px;
+                                        font-family: Poppins-SemiBold, Poppins;
+                                        font-weight: 600;
+                                    }
+
+                                    .c {
+                                        filter: url(#a);
+                                    }
+                                    </style>
+                                    <filter id="a" x="0" y="0" width="312.904" height="229.702" filterUnits="userSpaceOnUse">
+                                        <feOffset dx="12" dy="8" input="SourceAlpha"></feOffset>
+                                        <feGaussianBlur stdDeviation="12.5" result="b"></feGaussianBlur>
+                                        <feFlood flood-opacity="0.149"></feFlood>
+                                        <feComposite operator="in" in2="b"></feComposite>
+                                        <feComposite in="SourceGraphic"></feComposite>
+                                    </filter>
+                                </defs>
+                                <g transform="translate(-668.891 -398.5)">
+                                    <g class="c" transform="matrix(1, 0, 0, 1, 668.89, 398.5)">
+                                        <path class="a" d="M1368.743,743.716c0-20.373-16.205-36.818-36.219-36.818a34.119,34.119,0,0,0-5.231.4c-.527-16.121-15.634-29.089-34.182-29.089A38.532,38.532,0,0,0,1276.9,681.8c-7.113-13.526-21.883-22.8-39.005-22.8-20.6,0-37.867,13.552-42.309,31.711a27.388,27.388,0,0,0-12.3-2.888,28.005,28.005,0,0,0-26.206,18.6A36.782,36.782,0,0,0,1130.84,741.9c0,20.373,16.206,36.831,36.193,36.831a38.745,38.745,0,0,0,8.105-.886c3.95,12.627,17.211,21.936,32.942,21.936a36.454,36.454,0,0,0,25.528-10.018c6.838,14.15,22,23.943,39.581,23.943a44.215,44.215,0,0,0,35.759-17.618,26.9,26.9,0,0,0,7.33,1.014,27.861,27.861,0,0,0,25.869-17.826A36.739,36.739,0,0,0,1368.743,743.716Zm-72.634-5.8a1.913,1.913,0,0,0,.682-.075,4.417,4.417,0,0,1-.036.492A5.45,5.45,0,0,0,1296.109,737.919Z" transform="translate(-1105.34 -629.5)"></path>
+                                    </g><text class="b" transform="translate(804 516)">
+                                        <tspan x="-55" y="0">WELLBEING</tspan>
+                                    </text>
+                                </g>
+                            </svg>

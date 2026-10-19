@@ -1,0 +1,53 @@
+---
+alwaysApply: false
+---
+# Resilience and ops
+
+Express service under `src/` only. Open this file when the task is a failing external dependency, a multi-step flow that can finish halfway, a deploy, or an explicit metrics request. A normal CRUD or validation change does not add a circuit breaker, Redis, Bull, Prometheus, Pact, chaos tests, or a blue-green slot.
+
+The service already has Express, Mongo, RabbitMQ, Socket.IO, Winston, and cron. Extend those first. Every term below stays. Do not add new infra only because a term is listed.
+
+## Resilience
+
+| Term | Meaning | Apply here |
+|---|---|---|
+| Circuit Breaker | Stop calling a failing dependency for a cool-down. Fail fast or use a fallback | Wrap external HTTP (Razorpay, main backend), SMTP, and S3. Open after N failures |
+| Bulkhead | Isolate pools so one overload does not sink the rest | Separate timeouts and concurrency for RabbitMQ consumers, Socket.IO, and DB-heavy jobs |
+| Saga | Multi-step work with a compensating step when a later step fails | Cross-service flows (assign order, queue, notify). Compensate instead of leaving a half-done state |
+| Timeouts / retries | Bound the wait. Retry only an idempotent call | Axios, AMQP, and S3 get a timeout and a limited backoff. No infinite retry |
+
+## Caching and jobs
+
+Not in `package.json` today.
+
+| Term | Meaning | Apply here |
+|---|---|---|
+| Redis | Shared cache, token blacklist, rate-limit store | Optional for hot reads, logout blacklist, or a shared rate limit. Add it only for a real need |
+| Bull / BullMQ | Redis-backed job queue | Prefer RabbitMQ and node-cron unless a durable job UI or its retries are required |
+| Prometheus | Scraped metrics (`*_total`, latency histograms) | Export request latency, queue lag, and error rate, and alert on them |
+
+## Observability and quality
+
+| Term | Meaning | Apply here |
+|---|---|---|
+| OpenTelemetry | Traces, metrics, and logs with a correlation id | Trace HTTP to Mongo to RabbitMQ to the socket emit. Keep Winston for app logs |
+| Pact | Consumer-driven contract tests | Use when this service calls the store or admin backend |
+| Chaos | Failure injection outside production | Kill the queue, delay the database, drop sockets. Confirm ack, nack, reconnect, and a graceful degrade |
+| Feature flags | Toggle behavior without a redeploy | Gate a risky path (new assign logic, payments). Default off in production until it is proven |
+| Blue-green | Two production slots. Switch after health passes | Needs `/health-check`, graceful shutdown that drains sockets and the queue, and no half-applied migration |
+
+## Decision records
+
+An ADR is one page: context, decision, consequences. Write one when choosing Mongo vs SQL, the JWT strategy, MQ vs HTTP, Redis, or OpenTelemetry. Do not write an essay.
+
+## Review a critical path
+
+Use this list only when this change calls an external system, spans a queue plus a database write, or ships a deploy. A single validated CRUD route does not need a new library from this list.
+
+- Circuit breaker and a timeout on every external call.
+- Saga or compensation for a multi-step queue plus database flow.
+- Bulkhead between consumers and the API.
+- Winston now. OpenTelemetry and Prometheus when the service needs to scale.
+- Health check, graceful shutdown, and a blue-green cutover.
+- Redis or Bull only after a measured need.
+- A feature flag for a risky rollout. Pact for a cross-service contract. Chaos in staging.

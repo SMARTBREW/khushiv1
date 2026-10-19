@@ -1,0 +1,11 @@
+---
+alwaysApply: true
+---
+# Which rules apply
+
+Use one stack per file. Do not mix them.
+
+- Next.js UI under `app/`, and any `.tsx` or `.jsx` file, follows the frontend rules: Tailwind, components, TypeScript, accessibility, and client security. Validation there is Zod on a Next.js Route Handler.
+- The Express employee service under `src/` follows the backend rules: CommonJS, Joi, Mongoose, Passport, and the `src/` layout. Node is >= 16.20.1.
+
+Leave every existing pattern in place. `FadeInSection`, Framer Motion, SWR, the ops terms, and an existing `<Link>` that already wraps a button stay until the task is to change that code. New work uses the current rule for that stack.
