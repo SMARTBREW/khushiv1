@@ -84,7 +84,7 @@ function CloudLink({
 
 export default function KhushiiTree() {
   return (
-    <section className="w-full overflow-hidden bg-gray-100 py-8 md:py-12">
+    <section className="w-full overflow-hidden bg-gray-100 py-16 md:py-24">
       <div className="flex w-full flex-wrap md:hidden">
         <Image
           src="/images/tree/khushiitree.jpg"

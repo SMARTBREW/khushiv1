@@ -4,10 +4,10 @@ export default function VideoBanner() {
   return (
     <section
       aria-label="KHUSHII story video"
-      className="w-full bg-gray-100 px-5 py-12 md:px-10 md:py-16"
+      className="w-full bg-gray-100 px-5 py-16 md:px-10 md:py-24"
     >
       <div className="mx-auto max-w-5xl">
-        <Reveal className="mb-8 text-left">
+        <Reveal className="mb-12 text-left">
           <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#9d9c9c]">
             Our film
           </p>

@@ -54,7 +54,7 @@ export default function KapilDev() {
           />
         </div>
 
-        <div className="flex flex-col justify-center px-6 py-10 md:px-12 lg:py-14">
+        <div className="flex flex-col justify-center px-8 py-14 md:px-16 lg:py-20">
           <h2 className="text-[2rem] font-bold uppercase tracking-wide text-khushii-gray md:text-[3.25rem]">
             KAPIL DEV
           </h2>

@@ -27,7 +27,7 @@ export default function Hero() {
     <section
       aria-roledescription="carousel"
       aria-label="Campaign highlights"
-      className="relative h-[27rem] w-full overflow-hidden md:h-[39rem]"
+      className="relative h-[29rem] w-full overflow-hidden md:h-[42rem]"
     >
       {HERO_SLIDES.map((slide, index) => {
         const isActive = index === activeIndex;

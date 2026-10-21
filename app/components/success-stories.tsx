@@ -6,8 +6,8 @@ import Reveal from "./reveal";
 
 export default function SuccessStories() {
   return (
-    <section className="bg-white py-10 md:py-14">
-      <Reveal className="mx-auto max-w-6xl px-5 pb-8 text-center md:px-8">
+    <section className="bg-white py-16 md:py-24">
+      <Reveal className="mx-auto max-w-6xl px-5 pb-12 text-center md:px-8">
         <h2 className="text-3xl font-bold tracking-[0.06em] text-khushii-gray md:text-5xl">
           <Link href="/what-we-do/success-stories" className="text-khushii-gray">
             SUCCESS STORIES
@@ -51,7 +51,7 @@ export default function SuccessStories() {
         ))}
       </div>
 
-      <div className="mt-10 text-center">
+      <div className="mt-16 text-center">
         <Link
           href="/what-we-do/success-stories"
           className="inline-block rounded-[1.875rem] bg-khushii-gold px-[2.8125rem] py-[0.9375rem] text-[1.1875rem] leading-8 tracking-[0.2em] text-white transition-transform hover:translate-x-1 hover:bg-khushii-gray"

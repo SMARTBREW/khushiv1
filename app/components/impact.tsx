@@ -4,9 +4,9 @@ import Reveal from "./reveal";
 
 export default function Impact() {
   return (
-    <section className="w-full bg-gray-100 px-4 py-10 md:px-8 md:py-[3.125rem]">
+    <section className="w-full bg-gray-100 px-4 py-16 md:px-8 md:py-24">
       <Reveal>
-        <p className="mx-auto mb-6 w-full max-w-3xl text-center text-base leading-[1.875rem] text-[#989898] md:mb-8 md:text-lg">
+        <p className="mx-auto mb-10 w-full max-w-3xl text-center text-base leading-[1.875rem] text-[#989898] md:mb-12 md:text-lg">
           Students performed twice as better on test scores after
           KHUSHII&apos;s intervention
         </p>

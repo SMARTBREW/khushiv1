@@ -4,8 +4,8 @@ import Reveal, { DrawLine } from "./reveal";
 
 export default function ChangingLives() {
   return (
-    <section className="bg-white px-5 py-12 md:px-10 md:py-16">
-      <div className="mx-auto grid max-w-6xl items-start gap-8 lg:grid-cols-[minmax(0,0.9fr)_auto_minmax(0,1.1fr)] lg:gap-10">
+    <section className="bg-white px-5 py-20 md:px-10 md:py-28">
+      <div className="mx-auto grid max-w-6xl items-start gap-10 lg:grid-cols-[minmax(0,0.9fr)_auto_minmax(0,1.1fr)] lg:gap-16">
         <Reveal>
           <h3 className="text-[1.125rem] font-light leading-8 tracking-[0.2em] text-[#9d9c9c]">
             CHANGING LIVES!
