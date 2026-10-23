@@ -75,7 +75,7 @@ export default function CommunityEmpowerment() {
       </section>
 
       <section className="bg-white px-5 py-16 md:px-10 md:py-24">
-        <div className="mx-auto max-w-3xl">
+        <div className="mx-auto max-w-6xl">
           <h2 className="text-3xl font-medium text-khushii-brown md:text-4xl">
             ACCOMPLISHMENTS
           </h2>

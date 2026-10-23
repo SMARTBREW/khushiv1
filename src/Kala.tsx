@@ -21,8 +21,8 @@ function StatPartners({
   partners: readonly string[];
 }) {
   return (
-    <div className="mx-auto grid max-w-6xl items-start gap-10 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] lg:gap-12">
-      <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-1">
+    <div className="mx-auto max-w-6xl">
+      <ul className="grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-8">
         {stats.map((item) => (
           <li key={item.label} className="border border-[#f0e2c4] bg-[#fbf7f0] px-6 py-7">
             <Image
@@ -30,7 +30,7 @@ function StatPartners({
               alt=""
               width={120}
               height={120}
-              className="mx-auto h-16 w-16 object-contain lg:mx-0"
+              className="h-16 w-16 object-contain"
             />
             <h3 className="mt-4 text-2xl font-medium tracking-wide text-khushii-gold">
               {item.value}
@@ -39,12 +39,12 @@ function StatPartners({
           </li>
         ))}
       </ul>
-      <div>
+      <div className="mt-12">
         <h3 className="text-xl font-medium text-khushii-brown">
           Partnerships forged
         </h3>
         <span className="mt-4 block h-1 w-16 bg-khushii-gold" />
-        <ul className="mt-6 space-y-4">
+        <ul className="mt-6 grid gap-4 sm:grid-cols-2">
           {partners.map((partner) => (
             <li
               key={partner}
@@ -120,27 +120,20 @@ export default function Kala() {
       </section>
 
       <section className="bg-white px-5 py-16 md:px-10 md:py-24">
-        <div className="mx-auto mb-12 max-w-3xl md:mb-16">
-          <h2 className="text-3xl font-medium text-khushii-brown md:text-4xl">
-            ACCOMPLISHMENTS
-          </h2>
-          <span className="mt-4 block h-1 w-16 bg-khushii-gold" />
-          <p className="mt-8 text-base leading-8 text-khushii-gray">
-            {KALA.employability}
-          </p>
-        </div>
-        <StatPartners stats={KALA_STATS} partners={KALA_PARTNERS} />
-      </section>
-
-      <section className="bg-white px-5 py-16 md:px-10 md:py-24">
         <div className="mx-auto mb-12 max-w-6xl md:mb-16">
           <h2 className="text-3xl font-medium text-khushii-brown md:text-4xl">
             ACCOMPLISHMENTS
             <sup className="text-lg">*</sup>
           </h2>
           <span className="mt-4 block h-1 w-16 bg-khushii-gold" />
+          <p className="mt-8 text-base leading-8 text-khushii-gray">
+            {KALA.employability}
+          </p>
         </div>
-        <StatPartners stats={KALA_SHG_STATS} partners={KALA_SHG_PARTNERS} />
+        <StatPartners
+          stats={[...KALA_STATS, ...KALA_SHG_STATS]}
+          partners={[...KALA_PARTNERS, ...KALA_SHG_PARTNERS]}
+        />
         <p className="mx-auto mt-10 max-w-6xl text-sm text-khushii-gray">
           <span className="mr-1 align-middle">*</span>
           Last Year

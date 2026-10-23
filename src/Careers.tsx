@@ -135,11 +135,11 @@ export default function Careers() {
             <p className="mt-4 leading-8">
               C-120, 3rd Floor, Okhla
               <br />
-              Industrial Area Phase – 1,
+              Industrial Area Phase - 1,
               <br />
               Behind Crown Plaza, New
               <br />
-              Delhi – 110020
+              Delhi - 110020
             </p>
           </div>
           <div className="flex min-h-64 flex-col justify-center border border-[#f0e2c4] bg-[#fbf7f0] px-6 py-12 text-khushii-gray">

@@ -114,7 +114,7 @@ export default function ShreArticle() {
             Chapter 1: Talking about Sexual and Reproductive Health
           </h2>
           <p>
-            Sexual and reproductive health is often difficult to talk about – not
+            Sexual and reproductive health is often difficult to talk about - not
             only because of societal stigmas, but also due to a lack of
             information and awareness.
           </p>
@@ -249,7 +249,7 @@ export default function ShreArticle() {
             while also keeping in mind that each individual is impacted by an
             ecosystem of sociological, genetic, and biological factors. It is
             helpful to employ language that is empowering rather than apprehensive
-            – remind the participants that regardless of what challenge they are
+            - remind the participants that regardless of what challenge they are
             facing, there is help available, and that they have a support system
             with them to access it.
           </p>
@@ -279,12 +279,12 @@ export default function ShreArticle() {
           <p>
             This means that consent is not borne out of obligation, marital duty,
             emotional pressure, guilt, or another person’s expectations/demands of
-            you – but only when you and your partner both individually,
+            you - but only when you and your partner both individually,
             independently, enthusiastically agree to intimacy.
           </p>
           <p>
             Consent is a <strong className="font-medium">voluntary agreement</strong>{" "}
-            to engage in an activity – it is important to establish free and
+            to engage in an activity - it is important to establish free and
             enthusiastic consent{" "}
             <strong className="font-medium">before, during, and throughout</strong>{" "}
             sexual activity so as to ensure that everyone involved is experiencing
@@ -297,10 +297,10 @@ export default function ShreArticle() {
             be aware of their right to consent and for us to know what
             specifically it means to be a participant in the healthy, wholesome,
             free activity of intimacy that does not violate or breach individual
-            boundaries – be they physical or psychological.
+            boundaries - be they physical or psychological.
           </p>
           <Box>
-            <Q>Why do you think boundaries – physical and psychological are important?</Q>
+            <Q>Why do you think boundaries - physical and psychological are important?</Q>
             <Q>How do you think we can talk about our boundaries with our friends, families, and peers?</Q>
             <Q>Do you think it is important to keep checking in and communicating with our partners about their comfort and boundaries?</Q>
           </Box>
@@ -314,9 +314,9 @@ export default function ShreArticle() {
             </strong>
           </p>
           <p>
-            Consent explicitly means that everyone is able to demonstrate –{" "}
+            Consent explicitly means that everyone is able to demonstrate - {" "}
             <strong className="font-medium">through both actions and words</strong>{" "}
-            – that they are ready to participate in sexual activity voluntarily.
+            - that they are ready to participate in sexual activity voluntarily.
             It is important for both parties to give and receive consent in order
             for physical intimacy to be pleasurable and fulfilling.
           </p>
@@ -343,7 +343,7 @@ export default function ShreArticle() {
             <strong className="font-medium">
               Consent is paramount to an individual’s bodily autonomy and freedom
             </strong>{" "}
-            – it emphasizes that we have the final word, always, on what happens
+            - it emphasizes that we have the final word, always, on what happens
             to or with our bodies. This is neither determined by our past
             decisions, our history, the status of our relationships, or any
             emotional burdens placed on us by anyone else’s desires or demands.
@@ -370,12 +370,12 @@ export default function ShreArticle() {
             <li>Where you were geographically or at what time</li>
           </ul>
           <h3 className="text-center text-2xl font-medium">
-            It is, instead, always clearly communicable assent – to agree or to
+            It is, instead, always clearly communicable assent - to agree or to
             even say, ‘Let’s try this but we will stop if either one of us gets
             uncomfortable.’
           </h3>
           <p>
-            Consent is nuanced – like most human relationships and actions, we
+            Consent is nuanced - like most human relationships and actions, we
             must learn to discern intent and emotion while engaged in sexual
             activity, and this discernment is even more important if one person is
             in a position of power over the other.
@@ -475,8 +475,8 @@ export default function ShreArticle() {
           </p>
           <p>
             What this means socially is that sexual activity with a minor below
-            this age – known as the{" "}
-            <strong className="font-medium">‘statutory minimum age’</strong> – in any
+            this age - known as the{" "}
+            <strong className="font-medium">‘statutory minimum age’</strong> - in any
             capacity is considered ‘rape’. In 2012, the age of consent was revised
             to make the law a gender-neutral concept and to include the very real
             concept of sexual abuse of minor boys. Today, the Protection of
@@ -516,7 +516,7 @@ export default function ShreArticle() {
             At home, at workplaces, at social gatherings, or even on the street as
             sexual harassment in the form of catcalling, commenting on one’s body
             in a public space, groping, unwanted physical contact in spaces such
-            as metros and crowded public transport, –{" "}
+            as metros and crowded public transport, - {" "}
             <strong className="font-medium">
               it is important to recognise and affirm for ourselves that we are
               always and completely eligible to voice our discomfort and uphold
@@ -538,7 +538,7 @@ export default function ShreArticle() {
             While sex in itself is only vaguely alluded to in common parlance,
             issues such as abortion, contraceptives, STIs, pregnancy related
             complications, and family planning are forbidden topics of
-            conversation, relegated to whispers and rumours — which, in turn,
+            conversation, relegated to whispers and rumours - which, in turn,
             leads to misinterpretation of facts, dissemination of incorrect
             information, polarisation of mindsets, making sex itself a deeply
             uncomfortable topic for most people. Given this, it is all the more
@@ -578,7 +578,7 @@ export default function ShreArticle() {
               to using reusable clothes (as they face difficulties in using and
               washing sanitary products; most of which are not available easily).
               This also results in prolonged absences from school and takes a
-              psychological toll on their mental wellbeing — hence there is a
+              psychological toll on their mental wellbeing - hence there is a
               strong need for sexual and reproductive health programmes,
               particularly with a focus on menstrual hygiene, to be sensitively
               implemented in rural areas.
@@ -719,7 +719,7 @@ export default function ShreArticle() {
               <h4 className="text-left text-xl font-medium">Knowing Birth Control Options</h4>
               <p>
                 Besides the hormonal birth control, which is the most common,
-                there are other options available in different forms — including
+                there are other options available in different forms - including
                 the IUD (intrauterine device), pill, patch, shot; being well
                 informed about the kind of effects they have will be beneficial in
                 making the right choice for your body and circumstances. There are
@@ -744,7 +744,7 @@ export default function ShreArticle() {
               <p>
                 When it comes to safe sex, it is extremely important that
                 particpating partners are on the same page and share the same
-                goals. Furthermore, it helps to be aware of each other’s bodies —
+                goals. Furthermore, it helps to be aware of each other’s bodies -
                 looking out for signs of a sore, blister, rash, or discharge can
                 come to be very useful in identifying potential infections.
               </p>
@@ -804,12 +804,12 @@ export default function ShreArticle() {
             >
               (according to a census conducted in 2019)
             </a>
-            , this is an alarming figure — according to this statistic, roughly 81
+            , this is an alarming figure - according to this statistic, roughly 81
             million people in India contract an STI every year. Given this, STIs
             are an incredibly serious problem in India that needs to be addressed
             immediately.
           </p>
-          <Box note="Facilitator’s note: Feel free to discuss what sexually transmitted illnesses are as a part of this conversation – again, there are no right or wrong answers!">
+          <Box note="Facilitator’s note: Feel free to discuss what sexually transmitted illnesses are as a part of this conversation - again, there are no right or wrong answers!">
             <Q>What are some of the STIs you might have heard of?</Q>
             <Q>Who do you think is most affected by STIs?</Q>
           </Box>
@@ -835,7 +835,7 @@ export default function ShreArticle() {
               is another STI that is fairly common. The infection is known to cause
               the formation of blisters and sores that are painful and pus-filled.
               There are two types of the herpes simplex virus that cause different
-              illnesses — the HSV-1 virus which usually causes cold sores, and the
+              illnesses - the HSV-1 virus which usually causes cold sores, and the
               HSV-2 virus which causes genital herpes. If left untreated, herpes
               can lead to severe health damage including swelling of lymph nodes,
               headaches, body pain, fever, and even blindness, brain damage, and
@@ -902,7 +902,7 @@ export default function ShreArticle() {
             While these are the most common STIs in India, the lack of education
             about sexual and reproductive health amongst the Indian population
             makes them extremely vulnerable to less common STIs as well. A major
-            example of this is India’s struggle with HIV — a disease that had
+            example of this is India’s struggle with HIV - a disease that had
             reached peak contamination levels in the early 2000s. Studies show
             that in 2019, there were roughly 69,000 new cases of HIV, with an
             estimated national figure of 23 lakh people living with HIV in the
@@ -932,7 +932,7 @@ export default function ShreArticle() {
             <li>
               <strong className="font-medium">Practicing safe sex:</strong> It is
               important to remember to practice safe sex if you are sexually
-              active — especially if you are engaging with multiple sexual
+              active - especially if you are engaging with multiple sexual
               partners. Using latex condoms during sexual intercourse is an
               extremely effective way of reducing the risk of both, unwanted
               pregnancy as well as STIs.
@@ -968,7 +968,7 @@ export default function ShreArticle() {
           </ul>
           <p>
             In India, sex is a topic of conversation that is surprisingly
-            considered to be taboo and better avoided in discussions — a fact that
+            considered to be taboo and better avoided in discussions - a fact that
             is all the more rich in irony when we take a moment to remember that
             India is the largest democracy in the world, the second most populous
             nation on planet. Not only is sex education largely missing from
@@ -987,7 +987,7 @@ export default function ShreArticle() {
             resources and opportunities to educate themselves about safe and
             healthy sexual practices, sexual and reproductive health continues to
             be much-ignored aspect of healthcare, wellbeing, and empowerment
-            initiatives — something that often disproportionately disadvantages
+            initiatives - something that often disproportionately disadvantages
             women who are “traditionally” discouraged from navigating their own
             journey with menstruation, which is considered an “impure” and taboo
             topic in Indian society and culture.
@@ -1018,7 +1018,7 @@ export default function ShreArticle() {
             As one becomes more educated about issues relating to sexuality and
             sexual health it becomes necessary to educate oneself about
             contraception. Growing up, a false idea regarding contraceptives
-            prevails — that they are only for preventing pregnancies. While this
+            prevails - that they are only for preventing pregnancies. While this
             is in part the truth, this view leaves out the immensely important
             point that contraceptives are key to preventing the transmission of
             STIs. In other words, knowing how to use contraceptives is key to
@@ -1039,7 +1039,7 @@ export default function ShreArticle() {
           <p>
             The condom is the most common contraceptive, available at supermarkets
             and pharmacies. It is also quite easy to use: simply pull it over an
-            erect penis. Aside from this, condoms have other benefits as well —
+            erect penis. Aside from this, condoms have other benefits as well -
             they prevent STIs, are easy to carry and unlike some other
             contraceptives, don’t have any hormonal impact. However one should be
             careful that the condom does not tear or come off during intercourse.
@@ -1048,8 +1048,8 @@ export default function ShreArticle() {
           <h3 className="text-left text-2xl font-medium">The Oral Contraceptive Pill</h3>
           <p>
             The oral contraceptive pill commonly used by women is the next most
-            popular contraceptive. While the pill can have some benefits – it is
-            highly effective and may even reduce period pains – it unfortunately
+            popular contraceptive. While the pill can have some benefits - it is
+            highly effective and may even reduce period pains - it unfortunately
             does not prevent the transmission of STIs. Further, it can adversely
             affect one’s health by causing side effects like nausea, headaches and
             even depression. It is for this reason that a pill must be prescribed
@@ -1073,7 +1073,7 @@ export default function ShreArticle() {
             Finally, the diaphragm. Like the condom, the diaphragm creates a
             physical barrier between the sperm and the uterus. Unlike the condom,
             the diaphragm is reusable. The diaphragm also needs to stay in place
-            for at least 6 – and no more than 24 – hours after intercourse. To put
+            for at least 6 - and no more than 24 - hours after intercourse. To put
             on a diaphragm, fold it in half and gently place it inside your
             vagina. Then, push it up and back, as far as it can go, with the dome
             facing outward. It may appear tricky so feel free to ask a medical
@@ -1118,8 +1118,8 @@ export default function ShreArticle() {
           </p>
           <p>
             The close-knit familial structure and culturally learned behaviour in
-            India — which sanctify the idea of ‘family’ with ‘honor’ and ‘status’
-            — play a significant role in keeping cases of abuse under wraps. While
+            India - which sanctify the idea of ‘family’ with ‘honor’ and ‘status’
+            - play a significant role in keeping cases of abuse under wraps. While
             cases are very rarely reported to the police, perhaps more
             significantly, victims of abuse are often too fearful to narrate their
             experiences to even their closest confidants.
@@ -1175,8 +1175,8 @@ export default function ShreArticle() {
           </p>
           <p>
             While domestic abuse against women is relatively discussed about in
-            the public sphere — through conscientious efforts by activists, NGOs
-            and women’s rights organisations — another form of abuse, which is
+            the public sphere - through conscientious efforts by activists, NGOs
+            and women’s rights organisations - another form of abuse, which is
             both widespread and occurs most often in the domestic sphere is child
             sexual abuse. As noted in the Human Rights Watch’s 2013 report
             “Breaking the Silence: Child Sexual Abuse in India,”
@@ -1308,7 +1308,7 @@ export default function ShreArticle() {
           <p className="font-medium">In general, women have a right to the following:</p>
           <ul className="list-disc space-y-3 pl-10">
             <li>
-              <em>Access to abortion</em> — This right is perhaps the most
+              <em>Access to abortion</em> - This right is perhaps the most
               important one, and the one that needs the most rigorous
               implementation throughout all segments of the population. It is tied
               to a woman’s right to autonomy over her own body, because pregnancy,
@@ -1326,7 +1326,7 @@ export default function ShreArticle() {
               1971.
             </li>
             <li>
-              <em>Access to birth control</em> — Closely related to the right to
+              <em>Access to birth control</em> - Closely related to the right to
               abortion is the right to birth control, which works as a more
               long-term, preventive measure. It also allows women the right to
               decide how their reproductive system operates, from controlling
@@ -1335,7 +1335,7 @@ export default function ShreArticle() {
               deciding never to have children at all.
             </li>
             <li>
-              <em>Access to education — </em>In matters relating to reproductive
+              <em>Access to education - </em>In matters relating to reproductive
               healthcare and the procedures associated with it, such as
               contraceptives and surgeries, informed consent is important. No
               woman should have to undergo a procedure without a thorough,
@@ -1348,7 +1348,7 @@ export default function ShreArticle() {
               moment they reach the doctor’s office.
             </li>
             <li>
-              <em>Freedom from genital mutilation — </em>In many parts of the
+              <em>Freedom from genital mutilation - </em>In many parts of the
               world, young girls undergo genital mutilation owing to societal and
               religious beliefs. This extremely painful and unnecessary procedure
               has been widely recognized as a violation of women’s rights over
@@ -1371,7 +1371,7 @@ export default function ShreArticle() {
           </Box>
           <p>
             Here are some ways to ensure that women’s healthcare rights are more
-            effectively implemented and accessible in a society—
+            effectively implemented and accessible in a society-
           </p>
           <ul className="list-disc space-y-3 pl-10">
             <li>
@@ -1389,7 +1389,7 @@ export default function ShreArticle() {
             <li>
               <em>Normalising of conversations around reproductive health:</em>{" "}
               Conversations around reproductive health are, conventionally,
-              considered taboo in nearly all spaces in a society— from the family
+              considered taboo in nearly all spaces in a society - from the family
               to school to workplaces. Women are taught to fear their bodies and
               regard their reproductive system as something shameful, right from
               the moment they get their first period. In such a society, it
@@ -1420,8 +1420,8 @@ export default function ShreArticle() {
               undergo a hysterectomy that she should not undergo it, in case their
               husband changes his mind later about having children, or dismissing
               severe menstrual pain as ‘women’s lot’ or ‘only a fraction of what
-              you’d feel in childbirth— get used to it’. This kind of dismissal
-              can be especially damaging given that doctors are authorities— in
+              you’d feel in childbirth - get used to it’. This kind of dismissal
+              can be especially damaging given that doctors are authorities - in
               the patient’s mind they are authorities not just on the medical
               aspects of healthcare but also on its legal/moral aspects. This
               needs to be changed, for it violates women’s right to autonomy and
@@ -1471,7 +1471,7 @@ export default function ShreArticle() {
           <ul className="list-disc space-y-4 pl-10">
             <li>
               <h4 className="text-left text-xl font-medium">
-                Foundation for Reproductive Health Services India: 011 – 4984 0000
+                Foundation for Reproductive Health Services India: 011 - 4984 0000
               </h4>
               <ul className="list-[circle] pl-6">
                 <li>
@@ -1485,7 +1485,7 @@ export default function ShreArticle() {
             </li>
             <li>
               <h4 className="text-left text-xl font-medium">
-                Family Planning Association of India: (91) – 22 – 4086 3101 / 2202 9080 / 22025174
+                Family Planning Association of India: (91) - 22 - 4086 3101 / 2202 9080 / 22025174
               </h4>
               <ul className="list-[circle] pl-6">
                 <li>
@@ -1680,14 +1680,14 @@ export default function ShreArticle() {
             <li><span className="text-xl font-medium">NIMHANS Centre for Wellbeing (Bangalore):</span> 9480829670, 080 26685948</li>
             <li><span className="text-xl font-medium">Alternative Law Forum (Bangalore):</span> 802286875</li>
             <li><span className="text-xl font-medium">Lawyer’s collective (Delhi):</span> 011- 41666385</li>
-            <li><span className="text-xl font-medium">The International Foundation for Crime Prevention and Victim Care (Chennai):</span> 044 – 43111143</li>
-            <li><span className="text-xl font-medium">Shakti Shalini – Women’s Shelter:</span> 011- 24373736/ 24373737</li>
-            <li><span className="text-xl font-medium">All India Women’s Conference:</span> 10921, 011 – 23389680</li>
-            <li><span className="text-xl font-medium">Sakshi – Violence Intervention Center:</span> 0124 – 2562336/5018873</li>
-            <li><span className="text-xl font-medium">Nirmal Niketan:</span> 011 – 27859158</li>
-            <li><span className="text-xl font-medium">Nari Raksha Samiti:</span> 011 – 23973949</li>
-            <li><span className="text-xl font-medium">National Human Rights Commission:</span> 011 – 23385368/9810298900</li>
-            <li><span className="text-xl font-medium">Delhi Commission for Women:</span> 011 – 23379181/ 23370597</li>
+            <li><span className="text-xl font-medium">The International Foundation for Crime Prevention and Victim Care (Chennai):</span> 044 - 43111143</li>
+            <li><span className="text-xl font-medium">Shakti Shalini - Women’s Shelter:</span> 011- 24373736/ 24373737</li>
+            <li><span className="text-xl font-medium">All India Women’s Conference:</span> 10921, 011 - 23389680</li>
+            <li><span className="text-xl font-medium">Sakshi - Violence Intervention Center:</span> 0124 - 2562336/5018873</li>
+            <li><span className="text-xl font-medium">Nirmal Niketan:</span> 011 - 27859158</li>
+            <li><span className="text-xl font-medium">Nari Raksha Samiti:</span> 011 - 23973949</li>
+            <li><span className="text-xl font-medium">National Human Rights Commission:</span> 011 - 23385368/9810298900</li>
+            <li><span className="text-xl font-medium">Delhi Commission for Women:</span> 011 - 23379181/ 23370597</li>
           </ul>
         </div>
       </article>

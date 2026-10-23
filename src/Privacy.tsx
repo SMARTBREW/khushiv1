@@ -39,8 +39,8 @@ export default function Privacy() {
             KHUSHII- Kinship for Humanitarian Social and Holistic Intervention
             in India; herein referred as KHUSHII NGO is an independent, Not for
             Profit Organisation founded in 2003, having its office at C-120,
-            3rd Floor, Okhla Industrial Area Phase – 1, Behind Crowne Plaza,
-            New Delhi – 110020, which has its online portal at{" "}
+            3rd Floor, Okhla Industrial Area Phase - 1, Behind Crowne Plaza,
+            New Delhi - 110020, which has its online portal at{" "}
             <Link
               href="https://khushii.org/"
               target="_blank"

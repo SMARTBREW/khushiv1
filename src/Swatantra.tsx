@@ -76,7 +76,7 @@ export default function Swatantra() {
           <span className="mt-4 block h-1 w-16 bg-khushii-gold" />
         </div>
 
-        <ul className="mx-auto grid max-w-6xl gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <ul className="mx-auto grid max-w-6xl grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-8">
           {SWATANTRA_STATS.map((item) => (
             <li key={item.label} className="border border-[#f0e2c4] bg-[#fbf7f0] px-6 py-7">
               <Image

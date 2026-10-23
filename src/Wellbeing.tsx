@@ -63,7 +63,7 @@ export default function Wellbeing() {
       </section>
 
       <section className="bg-white px-5 py-16 md:px-10 md:py-24">
-        <div className="mx-auto mb-12 max-w-3xl md:mb-16">
+        <div className="mx-auto mb-12 max-w-6xl md:mb-16">
           <h2 className="text-3xl font-medium text-khushii-brown md:text-4xl">
             ACCOMPLISHMENTS
             <sup className="text-lg">*</sup>
@@ -74,7 +74,7 @@ export default function Wellbeing() {
           </p>
         </div>
 
-        <ul className="mx-auto grid max-w-6xl gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <ul className="mx-auto grid max-w-6xl grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-8">
           {WELLBEING_STATS.map((item) => (
             <li key={item.label} className="border border-[#f0e2c4] bg-[#fbf7f0] px-6 py-7">
               <Image

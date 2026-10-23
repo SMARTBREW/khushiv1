@@ -16,7 +16,7 @@ export const POSTS = [
     date: "August 31, 2024",
     href: "/blog/manoshakti-early-school-intervention-initiative",
     excerpt:
-      "In today’s fast-paced, technology-driven world, mental health awareness has become more critical than ever, especially for the most vulnerable members of society—children and adolescents. In India, mental health is still shrouded in stigma, often going unaddressed, particularly among marginalized communities. The ManoShakti school mental health project, launched in 2015, seeks to break this silence and […]",
+      "In today’s fast-paced, technology-driven world, mental health awareness has become more critical than ever, especially for the most vulnerable members of society - children and adolescents. In India, mental health is still shrouded in stigma, often going unaddressed, particularly among marginalized communities. The ManoShakti school mental health project, launched in 2015, seeks to break this silence and […]",
   },
   {
     image: "/images/blog/manobal.jpg",
@@ -44,18 +44,18 @@ export const POSTS = [
     image: "/images/blog/ban-mono.jpg",
     width: 1920,
     height: 780,
-    title: "“Manoshakti: My Moment of Joy” – Illuminating Young Lives",
+    title: "“Manoshakti: My Moment of Joy” - Illuminating Young Lives",
     category: "Education",
     date: "August 22, 2023",
     href: "/blog/manoshakti-my-moment-of-joy",
     excerpt:
-      "Manoshakti: Illuminating Young Lives Through a Year Long Program for Underprivileged Children In a world marked by disparities, a beacon of hope shines bright through a transformative initiative – the “Manoshakti: My Moment of Joy” program. Spanning a year, this project has been silently rewriting the narratives of underprivileged children. The Global Context Globally, an […]",
+      "Manoshakti: Illuminating Young Lives Through a Year Long Program for Underprivileged Children In a world marked by disparities, a beacon of hope shines bright through a transformative initiative - the “Manoshakti: My Moment of Joy” program. Spanning a year, this project has been silently rewriting the narratives of underprivileged children. The Global Context Globally, an […]",
   },
   {
     image: "/images/blog/ban-mono.jpg",
     width: 1920,
     height: 780,
-    title: "Yuvashree – active learner and passionate about sports",
+    title: "Yuvashree - active learner and passionate about sports",
     category: "Education",
     date: "July 28, 2022",
     href: "/blog/yuvashree",
@@ -187,7 +187,7 @@ export default function Blog() {
             Khushii Blog
           </p>
           <h1 className="mt-2 text-2xl font-medium text-white md:text-4xl">
-            Khushii – India’s Most Trusted NGO
+            Khushii - India’s Most Trusted NGO
           </h1>
         </div>
       </section>

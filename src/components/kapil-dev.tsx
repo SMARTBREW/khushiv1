@@ -63,7 +63,7 @@ export default function KapilDev() {
           <p className="mt-6 max-w-xl text-base leading-8 text-khushii-gray md:text-lg">
             Dearest friends of Khushii, it was in the early 2000s when I, along
             with like-minded people, came together with the sole purpose of
-            wanting to utilise our time to do a greater good – an activity which
+            wanting to utilise our time to do a greater good - an activity which
             was truly “needed” for society.
           </p>
 

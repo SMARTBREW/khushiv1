@@ -73,7 +73,7 @@ export default function ShikshaAurVikas() {
       </section>
 
       <section className="bg-white px-5 py-16 md:px-10 md:py-24">
-        <div className="mx-auto mb-12 max-w-3xl md:mb-16">
+        <div className="mx-auto mb-12 max-w-6xl md:mb-16">
           <h2 className="text-3xl font-medium text-khushii-brown md:text-4xl">
             ACCOMPLISHMENTS
             <sup className="text-lg">*</sup>
@@ -84,7 +84,7 @@ export default function ShikshaAurVikas() {
           </p>
         </div>
 
-        <ul className="mx-auto grid max-w-6xl gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <ul className="mx-auto grid max-w-6xl grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-8">
           {SHIKSHA_AUR_VIKAS_STATS.map((item) => (
             <li key={item.label} className="border border-[#f0e2c4] bg-[#fbf7f0] px-6 py-7">
               <Image
@@ -118,7 +118,7 @@ export default function ShikshaAurVikas() {
           </p>
         </div>
 
-        <div className="mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-2 lg:gap-12">
+        <div className="mx-auto grid max-w-6xl items-start gap-8 lg:grid-cols-2 lg:items-stretch lg:gap-12">
           <Image
             src="/images/shiksha/map.png"
             alt="Map of India marking Shiksha aur Vikas partner locations"
@@ -126,23 +126,25 @@ export default function ShikshaAurVikas() {
             height={1345}
             className="h-auto min-w-0 w-full"
           />
-          <ul className="min-w-0 space-y-3">
-            {SHIKSHA_AUR_VIKAS_PARTNERS.map((partner) => (
-              <li
-                key={partner}
-                className="flex items-start gap-3 border border-[#f0e2c4] bg-[#fbf7f0] px-4 py-3 text-khushii-gray"
-              >
-                <Image
-                  src="/images/education/polygon.svg"
-                  alt=""
-                  width={12}
-                  height={12}
-                  className="mt-1.5 h-3 w-3 shrink-0"
-                />
-                <span className="text-base leading-7">{partner}</span>
-              </li>
-            ))}
-          </ul>
+          <div className="relative min-w-0">
+            <ul className="flex flex-col gap-2 lg:absolute lg:inset-0 lg:justify-between lg:gap-1">
+              {SHIKSHA_AUR_VIKAS_PARTNERS.map((partner) => (
+                <li
+                  key={partner}
+                  className="flex items-center gap-2 border border-[#f0e2c4] bg-[#fbf7f0] px-3 py-2 text-sm leading-5 text-khushii-gray lg:py-1 lg:text-xs lg:leading-4"
+                >
+                  <Image
+                    src="/images/education/polygon.svg"
+                    alt=""
+                    width={12}
+                    height={12}
+                    className="h-3 w-3 shrink-0"
+                  />
+                  <span>{partner}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </section>
 

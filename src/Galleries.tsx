@@ -256,10 +256,10 @@ export default function Galleries() {
         {openPhoto ? (
           <div>
             <Image
-              src={openPhoto.src}
+              src={openPhoto.src.replace("/images/gallery/", "/images/gallery/full/")}
               alt={openPhoto.alt}
-              width={openPhoto.width}
-              height={openPhoto.height}
+              width={2048}
+              height={1365}
               className="mx-auto h-auto max-h-[80vh] w-auto max-w-full"
             />
             <div className="mt-3 flex justify-center gap-5 bg-[#fbf7f0] px-4 py-3">

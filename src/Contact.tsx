@@ -32,7 +32,8 @@ export default function Contact() {
   const {
     register,
     handleSubmit,
-    formState: { errors },
+    reset,
+    formState: { errors, isSubmitting },
   } = useForm<ContactForm>({
     defaultValues: { name: "", email: "", subject: "", message: "" },
   });
@@ -44,13 +45,19 @@ export default function Contact() {
     };
   }, []);
 
-  const onSubmit = (data: ContactForm) => {
-    const subject = encodeURIComponent(data.subject);
-    const body = encodeURIComponent(
-      `Name: ${data.name}\nEmail: ${data.email}\n\n${data.message}`,
-    );
-    window.location.href = `mailto:${SITE.email}?subject=${subject}&body=${body}`;
-    setNotice("Your email app should open with this message.");
+  const onSubmit = async (data: ContactForm) => {
+    setNotice(null);
+    const response = await fetch("/v1/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    });
+    if (!response.ok) {
+      setNotice("Something went wrong. Please try again.");
+      return;
+    }
+    reset();
+    setNotice("Thanks. Your message has been sent.");
   };
 
   return (
@@ -208,9 +215,10 @@ export default function Contact() {
             </div>
             <button
               type="submit"
-              className="mt-8 border border-[#f0e2c4] border-l-4 border-l-khushii-gold bg-[#fbf7f0] px-8 py-3 text-base text-khushii-brown"
+              disabled={isSubmitting}
+              className="mt-8 border border-[#f0e2c4] border-l-4 border-l-khushii-gold bg-[#fbf7f0] px-8 py-3 text-base text-khushii-brown disabled:cursor-not-allowed disabled:opacity-70"
             >
-              Send
+              {isSubmitting ? "Sending..." : "Send"}
             </button>
             {notice ? (
               <p className="mt-5 text-[#5f5f5f]" role="status">

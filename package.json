@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "vite",
+    "server": "npm run dev --prefix server",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
     "lint": "eslint"

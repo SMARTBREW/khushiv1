@@ -98,7 +98,7 @@ export default function Education() {
       </section>
 
       <section className="bg-white px-5 py-16 md:px-10 md:py-24">
-        <div className="mx-auto max-w-3xl">
+        <div className="mx-auto max-w-6xl">
           <h2 className="text-3xl font-medium text-khushii-brown md:text-4xl">
             ACCOMPLISHMENTS
           </h2>
@@ -111,7 +111,7 @@ export default function Education() {
           </h2>
           <span className="mt-4 block h-1 w-16 bg-khushii-gold" />
           <p className="mt-4 text-sm uppercase tracking-[0.16em] text-khushii-gray">
-            2003 — Today
+            2003 - Today
           </p>
         </div>
 
@@ -168,11 +168,11 @@ export default function Education() {
           </h2>
           <span className="mt-4 block h-1 w-16 bg-khushii-gold" />
           <p className="mt-4 text-sm uppercase tracking-[0.16em] text-khushii-gray">
-            2019–20
+            2019-20
           </p>
         </div>
 
-        <ul className="mx-auto grid max-w-6xl gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <ul className="mx-auto grid max-w-6xl grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-8">
           {EDUCATION_IMPROVEMENTS.map((item) => (
             <li key={item.value} className="border border-[#f0e2c4] bg-[#fbf7f0] px-6 py-7">
               <Image

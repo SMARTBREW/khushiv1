@@ -32,7 +32,14 @@ export default function Footer() {
   const onSubmit = async (data: NewsletterForm) => {
     setMessage(null);
     try {
-      await Promise.resolve(data);
+      const response = await fetch("/v1/newsletter", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+      if (!response.ok) {
+        throw new Error("Newsletter request failed");
+      }
       setMessage("Thanks for subscribing.");
       reset();
     } catch {

@@ -50,7 +50,7 @@ function ManoshaktiArticle() {
           <p>
             In today’s fast-paced, technology-driven world, mental health
             awareness has become more critical than ever, especially for the
-            most vulnerable members of society—children and adolescents. In
+            most vulnerable members of society - children and adolescents. In
             India, mental health is still shrouded in stigma, often going
             unaddressed, particularly among marginalized communities. The
             ManoShakti school mental health project, launched in 2015, seeks to
@@ -267,7 +267,7 @@ function ManoshaktiArticle() {
             continues to grow and evolve, ManoShakti is not only addressing the
             immediate mental health crisis but also laying the groundwork for a
             mentally resilient generation. Through early intervention,
-            awareness, and support, ManoShakti is changing lives—one child at a
+            awareness, and support, ManoShakti is changing lives - one child at a
             time.
           </Callout>
           <hr className="border-[#ddd]" />
@@ -293,7 +293,7 @@ function ManoshaktiArticle() {
               <li>
                 Malhotra, S., Kohli, A., & Kapoor, M. (n.d.). Prevalence of
                 psychiatric disorders in school children and adolescents in
-                India. Indian Journal of Psychiatry, 61(6), 540–544.
+                India. Indian Journal of Psychiatry, 61(6), 540-544.
                 doi:10.4103/psychiatry.IndianJPsychiatry_135_19.
               </li>
               <li>
@@ -301,7 +301,7 @@ function ManoshaktiArticle() {
                 S., Gajalakshmi, V., Gururaj, G., Suraweera, W., Jha, P., &
                 Million Death Study Collaborators. (2012). Suicide mortality in
                 India: A nationally representative survey. The Lancet, 379(9834),
-                2343–2351. https://doi.org/10.1016/S0140-6736(12)60606-0.
+                2343-2351. https://doi.org/10.1016/S0140-6736(12)60606-0.
               </li>
             </ol>
           </div>
@@ -358,10 +358,10 @@ function ManobalArticle() {
             approach was not only innovative but also grounded in reality.
             Manobal aims to psycho-educate 2,000 government school teachers and
             raise awareness about their own mental health as well as their
-            students’. My assignment – recording videos, photos, and
-            testimonials from participants – left me with a familiar mix of
+            students’. My assignment - recording videos, photos, and
+            testimonials from participants - left me with a familiar mix of
             excitement and nervousness. I was excited to understand first-hand
-            the lived experiences of KHUSHII’s beneficiaries – the main reason
+            the lived experiences of KHUSHII’s beneficiaries - the main reason
             I joined this NGO.
           </p>
           <p>
@@ -374,8 +374,8 @@ function ManobalArticle() {
             a person’s material condition determines their psychological
             condition. Sure, money can’t buy happiness, but it can buy therapy
             sessions, psychiatric treatment and medicines for mental illness.
-            Money can also buy basic necessities – a clean home in a safe
-            neighbourhood, nutritious meals and comfortable clothes – the
+            Money can also buy basic necessities - a clean home in a safe
+            neighbourhood, nutritious meals and comfortable clothes - the
             absence of which leads to a higher risk of depression and anxiety.
             Add onto this the stigma and myths that envelope mental health in
             India, and one begins to understand why only 1 in 20 Indians with
@@ -390,7 +390,7 @@ function ManobalArticle() {
             This question is at the very heart of Manobal. Teachers are
             frontline observers of behavioural and psychological problems in
             children, but a lack of awareness of mental health leads them to do
-            nothing, or even make the issue worse – a counsellor leading the
+            nothing, or even make the issue worse - a counsellor leading the
             workshop recounted the time she asked a teacher which student was
             in need of psychological help, and the teacher pointed to a girl
             and said, “vahan ek pagal ladki baithi hai, uski maa bhi pagal hai”
@@ -400,7 +400,7 @@ function ManobalArticle() {
           </Callout>
           <p>
             Further, teachers have a multifaceted role that goes beyond just
-            teaching – they must also be listeners, conflict resolvers,
+            teaching - they must also be listeners, conflict resolvers,
             cleaners, librarians, doctors; on and on goes the list. Long hours,
             high stress levels, and burnout negatively impacts their mental
             health. One’s own mental state determines how we interact with
@@ -460,7 +460,7 @@ function ManobalArticle() {
             me sad/angry/scared,” “I should just be happy,” we tell ourselves.
             A big reason for our lack of healthy coping strategies is that we
             are unable to do the very first step: knowing what we feel. I
-            recall my emotional state when I first arrived at the event – that
+            recall my emotional state when I first arrived at the event - that
             confusing blend of excitement, nervousness, and other feelings that
             I could not even name. I remember I also felt a small fear of these
             uncomfortable feelings, which made me want to ignore their
@@ -489,7 +489,7 @@ function ManobalArticle() {
             expectations they have from their students. A list of over 10
             qualities emerged, including things like ‘being hygienic,’ ‘sitting
             in one place,’ ‘being obedient,’ ‘listening without getting
-            distracted’ – qualities which are oftentimes at odds with
+            distracted’ - qualities which are oftentimes at odds with
             children’s still developing brains and true natures. Only one or
             two participants said that they expected their students to be happy
             and smiling. I found my heart sinking as I thought of how children
@@ -499,7 +499,7 @@ function ManobalArticle() {
             “Teachers, how many of these qualities do you possess?” Suddenly,
             there was a shy smile on everyone’s face. No preaching, no external
             instruction, no explicit statement was required to begin a shift in
-            teachers’ expectations from their students – a simple question and
+            teachers’ expectations from their students - a simple question and
             some self-reflection had done the trick.
           </p>
           <p>
@@ -946,7 +946,7 @@ function JoyArticle() {
       <article className="bg-white px-5 py-12 text-left md:px-10 md:py-16">
         <div className="mx-auto max-w-4xl space-y-5 text-lg leading-8 text-black">
           <ArticleTitle
-            title="“Manoshakti: My Moment of Joy” – Illuminating Young Lives"
+            title="“Manoshakti: My Moment of Joy” - Illuminating Young Lives"
             category="Education"
             date="August 22, 2023"
           />
@@ -956,7 +956,7 @@ function JoyArticle() {
           </p>
           <p>
             In a world marked by disparities, a beacon of hope shines bright
-            through a transformative initiative – the “Manoshakti: My Moment of
+            through a transformative initiative - the “Manoshakti: My Moment of
             Joy” program. Spanning a year, this project has been silently
             rewriting the narratives of underprivileged children.
           </p>
@@ -1014,15 +1014,15 @@ function JoyArticle() {
             entertainment; it’s about empowerment. Its impact transcends
             geographical boundaries, reminding us of the universal truth that
             every child deserves a chance to flourish. As this initiative shines
-            a light on the possibilities, it beckons us to come together –
-            locally and globally – to create a world where all children can
+            a light on the possibilities, it beckons us to come together -
+            locally and globally - to create a world where all children can
             experience joy, growth, and a sense of belonging.
           </Callout>
         </div>
       </article>
 
       <ArticleEnd
-        title="“Manoshakti: My Moment of Joy” – Illuminating Young Lives"
+        title="“Manoshakti: My Moment of Joy” - Illuminating Young Lives"
         older={older}
         newer={newer}
         related={related}
@@ -1049,7 +1049,7 @@ function YuvashreeArticle() {
       <section className="w-full overflow-hidden bg-white">
         <Image
           src="/images/blog/ban-mono.jpg"
-          alt="Yuvashree – active learner and passionate about sports"
+          alt="Yuvashree - active learner and passionate about sports"
           width={1920}
           height={780}
           priority
@@ -1060,7 +1060,7 @@ function YuvashreeArticle() {
       <article className="bg-white px-5 py-12 text-left md:px-10 md:py-16">
         <div className="mx-auto max-w-4xl space-y-5 text-lg leading-8 text-black">
           <ArticleTitle
-            title="Yuvashree – active learner and passionate about sports"
+            title="Yuvashree - active learner and passionate about sports"
             category="Education"
             date="July 28, 2022"
           />
@@ -1077,7 +1077,7 @@ function YuvashreeArticle() {
             see their bright spark dim.
           </p>
           <Callout>
-            DYK – According to World Health Organisation (WHO) data on mental
+            DYK - According to World Health Organisation (WHO) data on mental
             health, every 1 in 3 adolescents will suffer from an anxiety
             disorder.
           </Callout>
@@ -1085,7 +1085,7 @@ function YuvashreeArticle() {
             When Arutjothi, KHUSHII’s mental health counsellor, took an
             assessment test of the students, she realized that Yuvashree had
             high anxiety levels and enrolled her on KHUSHII’s{" "}
-            <em>Mental Health Counselling programme – Manoshakti</em>.
+            <em>Mental Health Counselling programme - Manoshakti</em>.
           </p>
           <p>
             Things changed for the better ever since Yuvashree started with the
@@ -1113,7 +1113,7 @@ function YuvashreeArticle() {
           </p>
           <Callout>
             “My victory in Silambam would not have been possible if Sandhar and
-            KHUSHII did not support me in overcoming my fears.” – Yuvashree
+            KHUSHII did not support me in overcoming my fears.” - Yuvashree
           </Callout>
           <p>
             We sincerely thank Sandhar for supporting KHUSHII’s programmes for
@@ -1123,7 +1123,7 @@ function YuvashreeArticle() {
       </article>
 
       <ArticleEnd
-        title="Yuvashree – active learner and passionate about sports"
+        title="Yuvashree - active learner and passionate about sports"
         older={older}
         newer={newer}
         related={related}
@@ -1185,7 +1185,7 @@ function DignityArticle() {
             “We are so relieved to have these sanitary pads! I feel extremely
             confident now and am not scared to go out of my house. Before, I
             used to sit in a corner, hiding at home during my menstruation
-            days” – Radhika, a student from State High school Khatawali
+            days” - Radhika, a student from State High school Khatawali
             district, Rewari, Haryana.
           </Callout>
           <p>
@@ -1203,7 +1203,7 @@ function DignityArticle() {
             “Girls in my class appreciate KHUSHII’s interventions such as the
             distribution of dignity kits and sessions on menstrual hygiene. You
             have helped restore our dignity. We are now able to and get out of
-            our house during menstruation. Please continue to support us.” –
+            our house during menstruation. Please continue to support us.” -
             Kirti, a student from Petit Municipal school, Bandra.
           </Callout>
           <p>
@@ -1281,7 +1281,7 @@ function CovidArticle() {
               56%.”
               <br />
               <span className="text-lg font-medium italic">
-                Source – UNICEF, 2020
+                Source - UNICEF, 2020
               </span>
             </p>
           </div>
@@ -1381,7 +1381,7 @@ function CovidArticle() {
             for a better future.
           </p>
           <p className="font-bold">
-            Together, let’s give a chance to the future – the children of our
+            Together, let’s give a chance to the future - the children of our
             nation
           </p>
         </div>
@@ -1405,8 +1405,8 @@ const TITLES: Record<string, string> = {
   "unveiling-the-menstrual-enigma-from-taboos-to-empowerment":
     "Unveiling the Menstrual Enigma: From Taboos to Empowerment - Khushii",
   "manoshakti-my-moment-of-joy":
-    "“Manoshakti: My Moment of Joy” – Illuminating Young Lives - Khushii",
-  yuvashree: "Yuvashree – active learner and passionate about sports - Khushii",
+    "“Manoshakti: My Moment of Joy” - Illuminating Young Lives - Khushii",
+  yuvashree: "Yuvashree - active learner and passionate about sports - Khushii",
   "dignity-kits": "Dignity kits enrolment & keep girls in school - Khushii",
   "education-in-covid-times":
     "Education in COVID times: A multi-front issue - Khushii",

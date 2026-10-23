@@ -79,7 +79,7 @@ export default function LostArticle() {
             a dark shadow over the future of millions of children across the
             globe.
           </div>
-          <Quote icon="/images/blog/no-remotes.png" source="Source – UNICEF, 2020">
+          <Quote icon="/images/blog/no-remotes.png" source="Source - UNICEF, 2020">
             “463 million children were unable to access remote learning resources during lockdown”
           </Quote>
           <p>
@@ -88,7 +88,7 @@ export default function LostArticle() {
             the disadvantageous segment of society. Lack of access to resources
             is accelerating inequalities and fueling a shadow pandemic.
           </p>
-          <Quote icon="/images/blog/regular.png" source="Source – UNICEF, 2020">
+          <Quote icon="/images/blog/regular.png" source="Source - UNICEF, 2020">
             “Previous school shutdowns demonstrate that children who are out of school for extended periods, especially girls are less likely to return to school”
           </Quote>
           <p>
@@ -96,7 +96,7 @@ export default function LostArticle() {
             face a heightened risk of domestic violence and psychosocial issues,
             sexual and gender-based violence, child marriage and child labour.
           </p>
-          <Quote icon="/images/blog/cm.png" source="Source – World Bank, 2020">
+          <Quote icon="/images/blog/cm.png" source="Source - World Bank, 2020">
             COVID-19 has resulted in an increased number of child marriages and children quitting school to join the labour market
           </Quote>
           <div className="border-l-4 border-khushii-gold bg-[#fbf7f0] px-5 py-5 leading-8 text-khushii-brown">

@@ -81,7 +81,7 @@ export default function ShikshaantraPlus() {
           <span className="mt-4 block h-1 w-16 bg-khushii-gold" />
         </div>
 
-        <ul className="mx-auto grid max-w-6xl gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <ul className="mx-auto grid max-w-6xl grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-8">
           {SHIKSHAANTRA_STATS.map((item) => (
             <li key={item.label} className="border border-[#f0e2c4] bg-[#fbf7f0] px-6 py-7">
               <Image
@@ -115,7 +115,7 @@ export default function ShikshaantraPlus() {
           </p>
         </div>
 
-        <div className="mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-2 lg:gap-12">
+        <div className="mx-auto grid max-w-6xl items-start gap-8 lg:grid-cols-2 lg:items-stretch lg:gap-12">
           <Image
             src="/images/education/map-n.jpg"
             alt="Map of India marking KHUSHII partner locations"
@@ -123,23 +123,25 @@ export default function ShikshaantraPlus() {
             height={1280}
             className="h-auto min-w-0 w-full"
           />
-          <ul className="min-w-0 space-y-3">
-            {SHIKSHAANTRA_PARTNERS.map((partner) => (
-              <li
-                key={partner}
-                className="flex items-start gap-3 border border-[#f0e2c4] bg-[#fbf7f0] px-4 py-3 text-khushii-gray"
-              >
-                <Image
-                  src="/images/education/polygon.svg"
-                  alt=""
-                  width={12}
-                  height={12}
-                  className="mt-1.5 h-3 w-3 shrink-0"
-                />
-                <span className="text-base leading-7">{partner}</span>
-              </li>
-            ))}
-          </ul>
+          <div className="relative min-w-0">
+            <ul className="flex flex-col gap-2 lg:absolute lg:inset-0 lg:justify-between lg:gap-1">
+              {SHIKSHAANTRA_PARTNERS.map((partner) => (
+                <li
+                  key={partner}
+                  className="flex items-center gap-2 border border-[#f0e2c4] bg-[#fbf7f0] px-3 py-2 text-sm leading-5 text-khushii-gray lg:py-1 lg:text-xs lg:leading-4"
+                >
+                  <Image
+                    src="/images/education/polygon.svg"
+                    alt=""
+                    width={12}
+                    height={12}
+                    className="h-3 w-3 shrink-0"
+                  />
+                  <span>{partner}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </section>
 

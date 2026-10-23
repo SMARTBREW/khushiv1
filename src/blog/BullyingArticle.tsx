@@ -70,7 +70,7 @@ export default function BullyingArticle() {
             their lives.
           </p>
           <p>
-            The <strong>SMHEAP</strong> –{" "}
+            The <strong>SMHEAP</strong> - {" "}
             <strong>
               समीप (Shikshantraa Plus Mental Health Education & Awareness
               Programme)

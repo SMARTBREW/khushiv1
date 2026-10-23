@@ -39,13 +39,9 @@ export default function Manobal() {
       </section>
 
       <section className="bg-white px-5 py-14 md:px-10 md:py-20">
-        <div className="mx-auto grid max-w-6xl items-stretch gap-6 lg:grid-cols-2">
-          <p className="rounded-3xl border border-[#f0e2c4] bg-[#fbf7f0] p-6 text-base leading-8 text-[#5f5f5f] md:p-8">
-            {MANOBAL.teachers}
-          </p>
-          <p className="rounded-3xl border border-[#f0e2c4] bg-[#fbf7f0] p-6 text-base leading-8 text-[#5f5f5f] md:p-8">
-            {MANOBAL.schools}
-          </p>
+        <div className="mx-auto max-w-6xl space-y-6 text-base leading-8 text-khushii-gray">
+          <p>{MANOBAL.teachers}</p>
+          <p>{MANOBAL.schools}</p>
         </div>
 
         <div className="mx-auto mt-16 max-w-3xl">
