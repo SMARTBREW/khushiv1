@@ -12,15 +12,15 @@ const PHOTOS = [
 
 export default function BullyingArticle() {
   const relatedHrefs = [
-    "/blog/manoshakti-my-moment-of-joy",
-    "/blog/yuvashree",
-    "/blog/dignity-kits",
-    "/blog/education-in-covid-times",
+    "/manoshakti-my-moment-of-joy-illuminating-young-lives-through-a-yearlong-program-for-underprivileged-children/",
+    "/yuvashree/",
+    "/dignity-kits-enhance-enrolment-and-keep-girls-in-school/",
+    "/education-in-covid-times-a-multi-front-issue/",
   ];
   const related = relatedHrefs
     .map((href) => POSTS.find((post) => post.href === href))
     .filter((post) => post !== undefined);
-  const newer = POSTS.find((post) => post.href === "/blog/savitri");
+  const newer = POSTS.find((post) => post.href === "/khushii-brings-a-glimmer-of-hope-to-savitri-life/");
   const older = POSTS.find((post) => post.title.startsWith("Skill building of Youth"));
 
   return (
@@ -77,7 +77,7 @@ export default function BullyingArticle() {
             </strong>{" "}
             intervention of KHUSHII under the{" "}
             <Link
-              href="/what-we-do/education/shikshaantra-plus"
+              href="/what-we-do/education/shikshaantra-plus/"
               className="font-medium text-[#0000ff]"
             >
               Shikshaantra Plus programme

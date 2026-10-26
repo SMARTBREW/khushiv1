@@ -58,8 +58,8 @@ export default function Careers() {
           priority
           className="h-auto w-full"
         />
-        <div className="absolute inset-y-0 left-0 flex w-1/2 items-center bg-gradient-to-r from-black/40 to-transparent px-6 md:px-14">
-          <h1 className="text-3xl font-bold uppercase tracking-[0.12em] text-white md:text-5xl">
+        <div className="px-5 py-6 md:absolute md:inset-y-0 md:left-0 md:flex md:w-1/2 md:items-center md:bg-gradient-to-r md:from-black/40 md:to-transparent md:px-14">
+          <h1 className="text-2xl font-bold uppercase leading-tight tracking-[0.06em] text-khushii-brown md:text-5xl md:tracking-[0.12em] md:text-white">
             Join our team
           </h1>
         </div>

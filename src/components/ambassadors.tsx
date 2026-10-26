@@ -125,7 +125,7 @@ export default function Ambassadors() {
 
         <div className="mt-12">
           <Link
-            href="/ambassadors"
+            href="/ambassadors/"
             className="inline-block text-sm text-khushii-gold-dark"
           >
             VIEW ALL

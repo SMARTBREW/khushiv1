@@ -21,7 +21,7 @@ export default function LeadershipPreview() {
           </p>
           <div className="mt-8">
             <Link
-              href="/who-we-are/leadership"
+              href="/who-we-are/leadership/"
               className="inline-block text-sm text-khushii-gold-dark"
             >
               VIEW ALL

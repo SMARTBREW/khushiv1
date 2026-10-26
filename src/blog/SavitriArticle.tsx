@@ -4,10 +4,10 @@ import { ArticleEnd, ArticleTitle } from "./frame";
 
 export default function SavitriArticle() {
   const relatedHrefs = [
-    "/blog/manoshakti-my-moment-of-joy",
-    "/blog/yuvashree",
-    "/blog/dignity-kits",
-    "/blog/education-in-covid-times",
+    "/manoshakti-my-moment-of-joy-illuminating-young-lives-through-a-yearlong-program-for-underprivileged-children/",
+    "/yuvashree/",
+    "/dignity-kits-enhance-enrolment-and-keep-girls-in-school/",
+    "/education-in-covid-times-a-multi-front-issue/",
   ];
   const related = relatedHrefs
     .map((href) => POSTS.find((post) => post.href === href))

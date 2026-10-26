@@ -1,5 +1,7 @@
 import { useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+
+import { articleKeyFromPath } from "./articles";
 
 import Image from "./components/image";
 import Link from "./components/link";
@@ -13,10 +15,10 @@ import GdaArticle from "./blog/GdaArticle";
 import { ArticleEnd, ArticleTitle, Callout } from "./blog/frame";
 
 const RELATED = [
-  "/blog/sensitive-teacher-successful-student",
-  "/blog/manoshakti-my-moment-of-joy",
-  "/blog/yuvashree",
-  "/blog/dignity-kits",
+  "/sensitive-teacher-successful-student-a-look-at-khushiis-manobal/",
+  "/manoshakti-my-moment-of-joy-illuminating-young-lives-through-a-yearlong-program-for-underprivileged-children/",
+  "/yuvashree/",
+  "/dignity-kits-enhance-enrolment-and-keep-girls-in-school/",
 ];
 
 function ManoshaktiArticle() {
@@ -319,10 +321,10 @@ function ManoshaktiArticle() {
 
 function ManobalArticle() {
   const relatedHrefs = [
-    "/blog/manoshakti-early-school-intervention-initiative",
-    "/blog/manoshakti-my-moment-of-joy",
-    "/blog/yuvashree",
-    "/blog/dignity-kits",
+    "/manoshakti-early-school-intervention-initiative-2/",
+    "/manoshakti-my-moment-of-joy-illuminating-young-lives-through-a-yearlong-program-for-underprivileged-children/",
+    "/yuvashree/",
+    "/dignity-kits-enhance-enrolment-and-keep-girls-in-school/",
   ];
   const related = relatedHrefs
     .map((href) => POSTS.find((post) => post.href === href))
@@ -919,10 +921,10 @@ function MenstrualArticle() {
 
 function JoyArticle() {
   const relatedHrefs = [
-    "/blog/manoshakti-early-school-intervention-initiative",
-    "/blog/sensitive-teacher-successful-student",
-    "/blog/yuvashree",
-    "/blog/dignity-kits",
+    "/manoshakti-early-school-intervention-initiative-2/",
+    "/sensitive-teacher-successful-student-a-look-at-khushiis-manobal/",
+    "/yuvashree/",
+    "/dignity-kits-enhance-enrolment-and-keep-girls-in-school/",
   ];
   const related = relatedHrefs
     .map((href) => POSTS.find((post) => post.href === href))
@@ -1033,10 +1035,10 @@ function JoyArticle() {
 
 function YuvashreeArticle() {
   const relatedHrefs = [
-    "/blog/manoshakti-early-school-intervention-initiative",
-    "/blog/sensitive-teacher-successful-student",
-    "/blog/manoshakti-my-moment-of-joy",
-    "/blog/dignity-kits",
+    "/manoshakti-early-school-intervention-initiative-2/",
+    "/sensitive-teacher-successful-student-a-look-at-khushiis-manobal/",
+    "/manoshakti-my-moment-of-joy-illuminating-young-lives-through-a-yearlong-program-for-underprivileged-children/",
+    "/dignity-kits-enhance-enrolment-and-keep-girls-in-school/",
   ];
   const related = relatedHrefs
     .map((href) => POSTS.find((post) => post.href === href))
@@ -1134,10 +1136,10 @@ function YuvashreeArticle() {
 
 function DignityArticle() {
   const relatedHrefs = [
-    "/blog/manoshakti-early-school-intervention-initiative",
-    "/blog/sensitive-teacher-successful-student",
-    "/blog/manoshakti-my-moment-of-joy",
-    "/blog/yuvashree",
+    "/manoshakti-early-school-intervention-initiative-2/",
+    "/sensitive-teacher-successful-student-a-look-at-khushiis-manobal/",
+    "/manoshakti-my-moment-of-joy-illuminating-young-lives-through-a-yearlong-program-for-underprivileged-children/",
+    "/yuvashree/",
   ];
   const related = relatedHrefs
     .map((href) => POSTS.find((post) => post.href === href))
@@ -1227,10 +1229,10 @@ function DignityArticle() {
 
 function CovidArticle() {
   const relatedHrefs = [
-    "/blog/manoshakti-early-school-intervention-initiative",
-    "/blog/sensitive-teacher-successful-student",
-    "/blog/manoshakti-my-moment-of-joy",
-    "/blog/yuvashree",
+    "/manoshakti-early-school-intervention-initiative-2/",
+    "/sensitive-teacher-successful-student-a-look-at-khushiis-manobal/",
+    "/manoshakti-my-moment-of-joy-illuminating-young-lives-through-a-yearlong-program-for-underprivileged-children/",
+    "/yuvashree/",
   ];
   const related = relatedHrefs
     .map((href) => POSTS.find((post) => post.href === href))
@@ -1423,7 +1425,8 @@ const TITLES: Record<string, string> = {
 };
 
 export default function BlogPost() {
-  const { slug } = useParams();
+  const { pathname } = useLocation();
+  const slug = articleKeyFromPath(pathname);
 
   useEffect(() => {
     document.title =
@@ -1490,7 +1493,7 @@ export default function BlogPost() {
     <section className="bg-white px-5 py-20 text-center">
       <p className="text-lg text-khushii-gray">This post is not available.</p>
       <Link
-        href="/blog"
+        href="/blog/"
         className="mt-6 inline-block text-sm font-medium text-khushii-gold-dark"
       >
         Back to the blog

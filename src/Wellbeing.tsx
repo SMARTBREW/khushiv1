@@ -26,12 +26,12 @@ export default function Wellbeing() {
           priority
           className="h-auto w-full"
         />
-        <div className="absolute inset-y-0 left-0 flex w-[46%] items-center px-6 md:px-14">
+        <div className="px-5 py-6 md:absolute md:inset-y-0 md:left-0 md:flex md:w-[46%] md:items-center md:px-14">
           <div>
-            <p className="text-2xl font-bold leading-tight text-white md:text-4xl lg:text-5xl">
+            <p className="text-xl font-bold leading-tight text-khushii-brown md:text-4xl md:text-white lg:text-5xl">
               {WELLBEING.unicef}
             </p>
-            <p className="mt-3 text-sm tracking-[0.14em] text-white md:text-base">
+            <p className="mt-3 text-sm tracking-[0.14em] text-khushii-gray md:text-base md:text-white">
               {WELLBEING.unicefCredit}
             </p>
           </div>
@@ -76,7 +76,7 @@ export default function Wellbeing() {
 
         <ul className="mx-auto grid max-w-6xl grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-8">
           {WELLBEING_STATS.map((item) => (
-            <li key={item.label} className="border border-[#f0e2c4] bg-[#fbf7f0] px-6 py-7">
+            <li key={item.label} className="min-w-0 border border-[#f0e2c4] bg-[#fbf7f0] px-4 py-6 md:px-6 md:py-7">
               <Image
                 src={item.icon}
                 alt=""
@@ -84,7 +84,7 @@ export default function Wellbeing() {
                 height={120}
                 className="h-16 w-16 object-contain"
               />
-              <h3 className="mt-4 text-2xl font-medium tracking-wide text-khushii-gold">
+              <h3 className="mt-4 break-words text-xl font-medium leading-tight tracking-wide text-khushii-gold md:text-2xl">
                 {item.value}
               </h3>
               <p className="mt-2 text-sm leading-6 text-khushii-gray">{item.label}</p>

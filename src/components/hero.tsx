@@ -25,8 +25,9 @@ export default function Hero() {
     <section
       aria-roledescription="carousel"
       aria-label="Campaign highlights"
-      className="relative h-[29rem] w-full overflow-hidden md:h-[42rem]"
+      className="relative w-full"
     >
+      <div className="relative aspect-[1480/560] w-full overflow-hidden md:aspect-auto md:h-[42rem]">
       {HERO_SLIDES.map((slide, index) => {
         const isActive = index === activeIndex;
 
@@ -63,8 +64,9 @@ export default function Hero() {
           </Link>
         );
       })}
+      </div>
 
-      <div className="absolute bottom-6 left-5 z-10 flex flex-col items-start gap-3 md:bottom-8 md:left-10">
+      <div className="z-10 flex flex-col items-start gap-3 px-5 py-4 md:absolute md:bottom-8 md:left-10 md:px-0 md:py-0">
         <span className="border border-[#f0e2c4] border-l-4 border-l-khushii-gold bg-[#fbf7f0] px-4 py-1.5 text-sm text-khushii-brown">
           {HERO_SLIDES[activeIndex].caption}
         </span>
@@ -79,14 +81,9 @@ export default function Hero() {
               aria-label={`Go to slide ${index + 1}`}
               aria-current={isActive}
               onClick={() => setActiveIndex(index)}
-              className="flex flex-col items-center gap-1"
+              className="flex items-center"
             >
-              <span
-                className={`h-2 rounded-full ${
-                  isActive ? "w-10 bg-khushii-donate" : "w-5 bg-white"
-                }`}
-              />
-              <span className="h-0.5 w-8 overflow-hidden rounded-full bg-white/50">
+              <span className="h-0.5 w-8 overflow-hidden rounded-full bg-khushii-brown/20 md:bg-white/50">
                 {isActive ? (
                   <motion.span
                     key={activeIndex}

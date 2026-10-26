@@ -25,7 +25,7 @@ export default function Manobal() {
           priority
           className="h-auto w-full"
         />
-        <div className="absolute inset-y-0 left-0 flex w-[42%] items-center px-6 md:px-12">
+        <div className="px-5 py-6 md:absolute md:inset-y-0 md:left-0 md:flex md:w-[42%] md:items-center md:px-12">
           <div>
             <h1 className="text-2xl font-medium leading-tight text-khushii-brown md:text-4xl">
               {MANOBAL.title}

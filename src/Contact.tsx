@@ -71,8 +71,8 @@ export default function Contact() {
           priority
           className="h-auto w-full"
         />
-        <div className="absolute inset-y-0 left-0 flex w-1/2 items-center px-6 md:px-14">
-          <h1 className="text-3xl font-bold uppercase tracking-[0.08em] text-white md:text-5xl">
+        <div className="px-5 py-6 md:absolute md:inset-y-0 md:left-0 md:flex md:w-1/2 md:items-center md:px-14">
+          <h1 className="text-2xl font-bold uppercase leading-tight tracking-[0.04em] text-khushii-brown md:text-5xl md:tracking-[0.08em] md:text-white">
             Contact Us - Khushii NGO
           </h1>
         </div>
@@ -80,7 +80,7 @@ export default function Contact() {
 
       <section id="dropus" className="relative z-10 bg-white px-5 pb-14 md:px-10 md:pb-20">
         <div className="mx-auto grid max-w-6xl items-start gap-8 lg:grid-cols-2 lg:gap-10">
-          <Reveal className="relative z-10 -mt-8 border border-[#f0e2c4] bg-[#fbf7f0] p-8 md:-mt-16 md:p-12">
+          <Reveal className="relative z-10 border border-[#f0e2c4] bg-[#fbf7f0] p-8 md:-mt-16 md:p-12">
             <h2 className="text-2xl font-medium text-khushii-brown md:text-3xl">
               Drop us a line
             </h2>

@@ -13,7 +13,7 @@ export default function ChangingLives() {
           <div className="mt-3 max-w-md">
             <h1 className="text-4xl font-medium leading-tight text-khushii-brown md:text-5xl">
               <Link
-                href="/what-we-do/success-stories"
+                href="/what-we-do/success-stories/"
                 className="text-khushii-brown"
               >
                 THE KHUSHII STORY

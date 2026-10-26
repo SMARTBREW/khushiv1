@@ -51,97 +51,97 @@ export type NavItem = {
 export const NAV_ITEMS: NavItem[] = [
   {
     label: "WHO WE ARE",
-    href: "/who-we-are",
+    href: "/who-we-are/",
     children: [
-      { label: "About", href: "/who-we-are" },
-      { label: "Leadership", href: "/who-we-are/leadership" },
-      { label: "Partners", href: "/who-we-are#all-sec-sec" },
-      { label: "Awards & Accreditations", href: "/who-we-are#awards_here" },
+      { label: "About", href: "/who-we-are/" },
+      { label: "Leadership", href: "/who-we-are/leadership/" },
+      { label: "Partners", href: "/who-we-are/#all-sec-sec" },
+      { label: "Awards & Accreditations", href: "/who-we-are/#awards_here" },
     ],
   },
   {
     label: "WHAT WE DO",
-    href: "/what-we-do/education",
+    href: "/what-we-do/education/",
     children: [
       {
         label: "Education",
-        href: "/what-we-do/education",
+        href: "/what-we-do/education/",
         children: [
           {
             label: "Swatantra Shikshaantra",
-            href: "/what-we-do/education/swatantra-shikshaantra",
+            href: "/what-we-do/education/swatantra-shikshaantra/",
           },
           {
             label: "Shikshaantra PLUS",
-            href: "/what-we-do/education/shikshaantra-plus",
+            href: "/what-we-do/education/shikshaantra-plus/",
           },
         ],
       },
       {
         label: "Wellbeing",
-        href: "/what-we-do/wellbeing",
+        href: "/what-we-do/wellbeing/",
         children: [
-          { label: "Manobal", href: "/what-we-do/wellbeing/manobal" },
+          { label: "Manobal", href: "/what-we-do/wellbeing/manobal/" },
         ],
       },
       {
         label: "Community-Empowerment",
-        href: "/what-we-do/community-empowerment",
+        href: "/what-we-do/community-empowerment/",
         children: [
           {
             label: "Shiksha aur Vikas",
-            href: "/what-we-do/wellbeing/shiksha-aur-vikas",
+            href: "/what-we-do/wellbeing/shiksha-aur-vikas/",
           },
-          { label: "Kala", href: "/what-we-do/community-empowerment/kala" },
+          { label: "Kala", href: "/what-we-do/community-empowerment/kala/" },
         ],
       },
-      { label: "Success Stories", href: "/what-we-do/success-stories" },
+      { label: "Success Stories", href: "/what-we-do/success-stories/" },
     ],
   },
   {
     label: "RESOURCES",
-    href: "/report",
+    href: "/resources/annual-reports/",
     children: [
-      { label: "Annual Reports", href: "/report#annual" },
-      { label: "FCRA Reports", href: "/report#fcra" },
-      { label: "Newsletter", href: "/report#newsletter" },
-      { label: "Blog", href: "/blog" },
+      { label: "Annual Reports", href: "/resources/annual-reports/" },
+      { label: "FCRA Reports", href: "/resources/annual-reports/fcra-reports/" },
+      { label: "Newsletter", href: "/newsletter/" },
+      { label: "Blog", href: "/blog/" },
     ],
   },
-  { label: "GALLERY", href: "/galleries" },
-  { label: "CONTACT", href: "/contact" },
+  { label: "GALLERY", href: "/galleries/" },
+  { label: "CONTACT", href: "/contact/" },
 ];
 
 export const DONATE_OPTIONS = [
   {
     label: "Support our Remedial School",
-    href: "/building-brighter-future",
+    href: "/building-brighter-future/",
   },
-  { label: "Support A Child", href: "/donate-2" },
-  { label: "Pads for Freedom", href: "/pads-for-freedom" },
+  { label: "Support A Child", href: "/donate-2/" },
+  { label: "Pads for Freedom", href: "/pads-for-freedom/" },
 ] as const;
 
 export const FOOTER_QUICK_LINKS = [
-  { label: "Leadership", href: "/who-we-are/leadership" },
-  { label: "CAREER", href: "/careers" },
-  { label: "Privacy Policy", href: "/privacy-policy-2" },
+  { label: "Leadership", href: "/who-we-are/leadership/" },
+  { label: "CAREER", href: "/careers/" },
+  { label: "Privacy Policy", href: "/privacy-policy-2/" },
 ] as const;
 
 export const FOOTER_SECONDARY_LINKS = [
-  { label: "SUCCESS STORIES", href: "/what-we-do/success-stories" },
-  { label: "GALLERY", href: "/galleries" },
+  { label: "SUCCESS STORIES", href: "/what-we-do/success-stories/" },
+  { label: "GALLERY", href: "/galleries/" },
 ] as const;
 
 export const GET_INVOLVED = [
   {
     label: "GET IN TOUCH",
-    href: "/contact",
+    href: "/contact/",
     icon: "/images/footer/touch.png",
     className: "bg-khushii-cream",
   },
   {
     label: "DONATE NOW",
-    href: "/donation",
+    href: "/donation/",
     icon: "/images/footer/donate.png",
     className: "bg-khushii-cream",
   },
@@ -150,25 +150,25 @@ export const GET_INVOLVED = [
 export const HERO_SLIDES = [
   {
     src: "/images/hero/newbnd.jpg",
-    href: "/donate-2",
+    href: "/donate-2/",
     alt: "Support a child - help Rekha continue with her education",
     caption: "Support a child",
   },
   {
     src: "/images/hero/newb2b2.jpg",
-    href: "/donate-2",
+    href: "/donate-2/",
     alt: "Support a child with KHUSHII",
     caption: "Support a child",
   },
   {
     src: "/images/hero/newb111d.jpg",
-    href: "/pads-for-freedom",
+    href: "/pads-for-freedom/",
     alt: "Pads for Freedom campaign",
     caption: "Pads for Freedom",
   },
   {
     src: "/images/hero/newb222d.jpg",
-    href: "/pads-for-freedom",
+    href: "/pads-for-freedom/",
     alt: "Pads for Freedom - support menstrual hygiene",
     caption: "Pads for Freedom",
   },
@@ -189,17 +189,17 @@ export const SUCCESS_STORIES = [
   {
     image: "/images/stories/nisha_2.jpg",
     title: "KHUSHII HELPS NISHA PURSUE HER DREAMS",
-    href: "/what-we-do/success-stories",
+    href: "/what-we-do/success-stories/",
   },
   {
     image: "/images/stories/new_project_6.jpg",
     title: "NEETU’S LOST INTEREST IN STUDIES REKINDLED",
-    href: "/stories/khushii-rekindles-neetus-lost-interest-in-studies",
+    href: "/stories/khushii-rekindles-neetus-lost-interest-in-studies/",
   },
   {
     image: "/images/stories/new_project_58.jpg",
     title: "RASHID TURNS A WEAKNESS INTO A STRENGTH",
-    href: "/stories/khushii-helps-rashid-to-rediscover-the-joy-of-classes-and-classmates",
+    href: "/stories/khushii-helps-rashid-to-rediscover-the-joy-of-classes-and-classmates/",
   },
 ] as const;
 
@@ -425,7 +425,7 @@ export const EDUCATION_PROGRAMMES = [
     body: "In 2006, the Swatantra Shikhaantra centre in Devli, Sangam Vihar was established with an aim to provide remedial education to children with learning difficulties in English, Mathematics and Science.",
     image: "/images/education/swatantra.png",
     alt: "A student in a lab coat examining a test tube",
-    href: "/what-we-do/education/swatantra-shikshaantra",
+    href: "/what-we-do/education/swatantra-shikshaantra/",
   },
   {
     title: "Shikshaantra Plus",
@@ -433,7 +433,7 @@ export const EDUCATION_PROGRAMMES = [
     body: "Recent survey analyses have shown that learning levels in Government run primary schools have remained consistently low. More alarming is the fact that almost half the children drop out after 8 years of elementary education, without acquiring minimum acceptable foundational skills.",
     image: "/images/education/shikshaantra-plus.png",
     alt: "Students and a teacher gathered around a Newton’s cradle",
-    href: "/what-we-do/education/shikshaantra-plus",
+    href: "/what-we-do/education/shikshaantra-plus/",
   },
 ] as const;
 
@@ -672,7 +672,7 @@ export const COMMUNITY_PROGRAMMES = [
     body: "Millions of Indians do not have access to adequate healthcare, food and nutrition, education and livelihood. In the education domain, support of student’s families and communities is crucial to the success…",
     image: "/images/community/shiksha-aur-vikas.jpg",
     alt: "Three women sitting on a rug and looking at a laptop together",
-    href: "/what-we-do/wellbeing/shiksha-aur-vikas",
+    href: "/what-we-do/wellbeing/shiksha-aur-vikas/",
   },
   {
     title: "Kala",
@@ -680,7 +680,7 @@ export const COMMUNITY_PROGRAMMES = [
     body: "The proportion of formally skilled workers in India is extremely low, at 4.69% of the total workforce. Youth unemployment is a major concern, because they enter the labour market without appropriate skills.",
     image: "/images/community/kala.jpg",
     alt: "Students in a beauty-skills class watching a facial demonstration",
-    href: "/what-we-do/community-empowerment/kala",
+    href: "/what-we-do/community-empowerment/kala/",
   },
 ] as const;
 
@@ -814,7 +814,7 @@ export const STORY_CARDS = [
     image: "/images/stories/sarla.jpg",
     width: 700,
     height: 500,
-    href: "/stories/tailoring-her-own-future",
+    href: "/stories/tailoring-her-own-future/",
     article: {
       title: "Tailoring Her Own Future",
       paragraphs: [
@@ -832,7 +832,7 @@ export const STORY_CARDS = [
     image: "/images/stories/sowseed.jpg",
     width: 700,
     height: 500,
-    href: "/stories/sow-the-seeds-for-success",
+    href: "/stories/sow-the-seeds-for-success/",
     article: {
       title: "Sow the seeds for success",
       paragraphs: [
@@ -847,7 +847,7 @@ export const STORY_CARDS = [
     image: "/images/stories/rahul.jpg",
     width: 300,
     height: 251,
-    href: "/stories/rashid-rediscovers-joy-of-classes",
+    href: "/stories/rashid-rediscovers-joy-of-classes/",
     article: {
       title: "The Art Of Turning A Weakness Into A Strength",
       paragraphs: [
@@ -862,7 +862,7 @@ export const STORY_CARDS = [
     image: "/images/stories/abhishek.jpg",
     width: 700,
     height: 500,
-    href: "/stories/khushii-helps-abhishek-overcome-learning-issues",
+    href: "/stories/khushii-helps-abhishek-overcome-learning-issues/",
     article: {
       title:
         "Khushii NGO Helps Abhishek Overcome Learning Issues And Regain Confidence",
@@ -880,7 +880,7 @@ export const STORY_CARDS = [
     image: "/images/stories/harchandpur.jpg",
     width: 700,
     height: 500,
-    href: "/stories/khushii-brings-quality-education-to-harchandpur",
+    href: "/stories/khushii-brings-quality-education-to-harchandpur/",
     article: {
       title:
         "Khushii NGO Implemented the Shikshaantra Plus Program in Government Primary School",
@@ -898,7 +898,7 @@ export const STORY_CARDS = [
     image: "/images/stories/thanisandra.jpg",
     width: 700,
     height: 500,
-    href: "/stories/thanisandra-school-gets-child-friendly-playground",
+    href: "/stories/thanisandra-school-gets-child-friendly-playground/",
     article: {
       title: "Thanisandra School Gets Child Friendly Playground",
       paragraphs: [
@@ -917,7 +917,7 @@ export const STORY_CARDS = [
     image: "/images/stories/gayatri.jpg",
     width: 700,
     height: 500,
-    href: "/stories/khushii-helps-gayatri-gain-financial-independence",
+    href: "/stories/khushii-helps-gayatri-gain-financial-independence/",
     article: {
       title: "Khushii NGO Helps Gayatri Gain Financial Independence",
       paragraphs: [
@@ -934,7 +934,7 @@ export const STORY_CARDS = [
     image: "/images/stories/nisha.jpg",
     width: 700,
     height: 500,
-    href: "/stories/khushii-helps-nisha-pursue-her-dream-career",
+    href: "/stories/khushii-helps-nisha-pursue-her-dream-career/",
     article: {
       title: "Khushi NGO Helps Nisha Pursue Her Dream Career",
       paragraphs: [
@@ -949,7 +949,7 @@ export const STORY_CARDS = [
     image: "/images/stories/mohini.jpg",
     width: 700,
     height: 500,
-    href: "/stories/khushii-recharges-mohinis-flagging-spirits",
+    href: "/stories/khushii-recharges-mohinis-flagging-spirits/",
     article: {
       title: "Khushii NGO Recharges Mohini’s Flagging Spirits",
       paragraphs: [
@@ -967,7 +967,7 @@ export const STORY_CARDS = [
     image: "/images/stories/rashid.jpg",
     width: 854,
     height: 682,
-    href: "/stories/khushii-helps-rashid-to-rediscover-the-joy-of-classes-and-classmates",
+    href: "/stories/khushii-helps-rashid-to-rediscover-the-joy-of-classes-and-classmates/",
     article: {
       title:
         "Khushii NGO Helps Rashid To Rediscover The Joy Of Classes And Classmates",
@@ -983,7 +983,7 @@ export const STORY_CARDS = [
     image: "/images/stories/neetu.jpg",
     width: 400,
     height: 300,
-    href: "/stories/khushii-rekindles-neetus-lost-interest-in-studies",
+    href: "/stories/khushii-rekindles-neetus-lost-interest-in-studies/",
     article: {
       title: "Khushii NGO Rekindles Neetu’s Lost Interest In Studies",
       paragraphs: [
@@ -998,7 +998,7 @@ export const STORY_CARDS = [
     image: "/images/stories/gaurav.jpg",
     width: 700,
     height: 500,
-    href: "/stories/khushii-helps-uneducated-youth-to-earn-a-respectable-livelihood",
+    href: "/stories/khushii-helps-uneducated-youth-to-earn-a-respectable-livelihood/",
     article: {
       title: "KHUSHII Helps Uneducated Youth To Earn A Respectable Livelihood",
       paragraphs: [

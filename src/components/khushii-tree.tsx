@@ -5,35 +5,35 @@ import Link from "./link";
 const CLOUDS = [
   {
     label: "Spreading Smiles",
-    href: "/who-we-are",
+    href: "/who-we-are/",
     src: "/images/tree/cloud-spreading-smiles.svg",
     width: 250,
     desktop: "absolute left-[3%] top-[20%] z-10 w-[13rem] lg:w-[15rem]",
-    mobile: "w-1/2 -mt-[1.875rem] text-center",
+    mobile: "text-center",
   },
   {
     label: "Education",
-    href: "/what-we-do/education",
+    href: "/what-we-do/education/",
     src: "/images/tree/cloud-education.svg",
     width: 200,
     desktop: "absolute right-[5%] top-[-1.25rem] z-10 w-[10.5rem] lg:w-[12rem]",
-    mobile: "w-1/2 -mt-[1.875rem] text-center",
+    mobile: "text-center",
   },
   {
     label: "Wellbeing",
-    href: "/what-we-do/wellbeing",
+    href: "/what-we-do/wellbeing/",
     src: "/images/tree/cloud-wellbeing.svg",
     width: 200,
     desktop: "absolute left-[12%] top-0 z-10 w-[10.5rem] lg:w-[12rem]",
-    mobile: "w-1/2 -my-[6.25rem] text-center",
+    mobile: "text-center",
   },
   {
     label: "Community Empowerment",
-    href: "/what-we-do/community-empowerment",
+    href: "/what-we-do/community-empowerment/",
     src: "/images/tree/cloud-community.svg",
     width: 250,
     desktop: "absolute right-[12%] top-[20%] z-10 w-[13rem] lg:w-[15rem]",
-    mobile: "w-1/2 -my-[6.25rem] text-center",
+    mobile: "text-center",
   },
 ] as const;
 
@@ -83,22 +83,24 @@ function CloudLink({
 export default function KhushiiTree() {
   return (
     <section className="w-full overflow-hidden bg-white py-16 md:py-24">
-      <div className="flex w-full flex-wrap md:hidden">
+      <div className="md:hidden">
         <Image
           src="/images/tree/khushiitree.jpg"
           alt="KHUSHII tree of impact"
           width={800}
           height={180}
-          className="mx-auto h-[11.25rem] w-full max-w-3xl object-contain"
+          className="mx-auto h-auto w-full object-contain"
         />
-        {CLOUDS.map((cloud, index) => (
-          <CloudLink
-            key={cloud.label}
-            cloud={cloud}
-            className={cloud.mobile}
-            delay={index * 0.12}
-          />
-        ))}
+        <div className="grid grid-cols-2 gap-6 px-5 pt-8">
+          {CLOUDS.map((cloud, index) => (
+            <CloudLink
+              key={cloud.label}
+              cloud={cloud}
+              className={cloud.mobile}
+              delay={index * 0.12}
+            />
+          ))}
+        </div>
       </div>
 
       <div className="mx-auto hidden w-full max-w-6xl items-center gap-6 px-6 md:grid md:grid-cols-1 lg:grid-cols-[11rem_minmax(0,1fr)] lg:px-8">

@@ -9,7 +9,7 @@ const envVarsSchema = Joi.object()
   .keys({
     NODE_ENV: Joi.string().valid('production', 'development', 'test').default('development'),
     PORT: Joi.number().default(4000),
-    CORS_ORIGIN: Joi.string().required().description('Allowed browser origin'),
+    CORS_ORIGIN: Joi.string().required().description('Allowed browser origins, separated by commas'),
     DB_HOST: Joi.string().required(),
     DB_PORT: Joi.number().default(3306),
     DB_USER: Joi.string().required(),
@@ -33,7 +33,9 @@ if (error) {
 module.exports = {
   env: envVars.NODE_ENV,
   port: envVars.PORT,
-  corsOrigin: envVars.CORS_ORIGIN,
+  corsOrigin: envVars.CORS_ORIGIN.split(',')
+    .map((origin) => origin.trim())
+    .filter(Boolean),
   mysql: {
     host: envVars.DB_HOST,
     port: envVars.DB_PORT,

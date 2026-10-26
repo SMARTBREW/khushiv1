@@ -197,7 +197,7 @@ export default function Header() {
         </Link>
 
         <Link
-          href="/donation"
+          href="/donation/"
           className="rounded-full bg-white px-4 py-2 text-sm font-medium uppercase text-black"
         >
           Donate
@@ -251,7 +251,7 @@ export default function Header() {
             onMouseLeave={() => setIsDonateOpen(false)}
           >
             <Link
-              href="/donation"
+              href="/donation/"
               className={`rounded-full px-5 py-2 text-sm uppercase xl:text-base ${
                 isDonateOpen
                   ? "bg-white/20 text-white"

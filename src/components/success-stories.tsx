@@ -8,7 +8,7 @@ export default function SuccessStories() {
     <section className="bg-white py-16 md:py-24">
       <div className="mx-auto max-w-6xl px-5 pb-12 md:px-8">
         <h2 className="text-3xl font-medium text-khushii-brown md:text-4xl">
-          <Link href="/what-we-do/success-stories" className="text-khushii-brown">
+          <Link href="/what-we-do/success-stories/" className="text-khushii-brown">
             SUCCESS STORIES
           </Link>
         </h2>
@@ -31,8 +31,8 @@ export default function SuccessStories() {
               sizes="(min-width: 768px) 34vw, 100vw"
               className="object-cover grayscale transition duration-700 group-hover:scale-105"
             />
-            <div className="absolute inset-x-0 bottom-0 top-full bg-black/50 transition-[top] duration-500 group-hover:top-0">
-              <div className="absolute left-1/2 top-1/2 w-3/4 -translate-x-1/2 -translate-y-1/2 text-center">
+            <div className="absolute inset-x-0 bottom-0 bg-black/50 px-4 py-4 text-center md:top-full md:px-0 md:py-0 md:transition-[top] md:duration-500 md:group-hover:top-0">
+              <div className="md:absolute md:left-1/2 md:top-1/2 md:w-3/4 md:-translate-x-1/2 md:-translate-y-1/2">
                 <Link href={story.href} className="mb-5 inline-block">
                   <Image
                     src="/images/stories/stories-arrows.png"
@@ -53,7 +53,7 @@ export default function SuccessStories() {
 
       <div className="mx-auto mt-12 max-w-6xl px-5 md:px-8">
         <Link
-          href="/what-we-do/success-stories"
+          href="/what-we-do/success-stories/"
           className="inline-block text-sm text-khushii-gold-dark"
         >
           VIEW ALL

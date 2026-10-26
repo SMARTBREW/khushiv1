@@ -20,7 +20,7 @@ export default function DonateSticky() {
         }`}
       >
         <Link
-          href="/donation"
+          href="/donation/"
           className="flex items-center gap-2 px-3 py-1 pr-4 text-sm text-white"
         >
           <Image

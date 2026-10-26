@@ -31,7 +31,7 @@ export default function ShikshaAurVikas() {
           priority
           className="h-auto w-full"
         />
-        <div className="absolute inset-y-0 left-0 flex w-[42%] items-center px-6 md:px-12">
+        <div className="px-5 py-6 md:absolute md:inset-y-0 md:left-0 md:flex md:w-[42%] md:items-center md:px-12">
           <div>
             <p className="text-sm font-light tracking-[0.16em] text-khushii-brown md:text-lg">
               {SHIKSHA_AUR_VIKAS.eyebrow}
@@ -86,7 +86,7 @@ export default function ShikshaAurVikas() {
 
         <ul className="mx-auto grid max-w-6xl grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-8">
           {SHIKSHA_AUR_VIKAS_STATS.map((item) => (
-            <li key={item.label} className="border border-[#f0e2c4] bg-[#fbf7f0] px-6 py-7">
+            <li key={item.label} className="min-w-0 border border-[#f0e2c4] bg-[#fbf7f0] px-4 py-6 md:px-6 md:py-7">
               <Image
                 src={item.icon}
                 alt=""
@@ -94,7 +94,7 @@ export default function ShikshaAurVikas() {
                 height={96}
                 className="h-16 w-16 object-contain"
               />
-              <h3 className="mt-4 text-2xl font-medium tracking-wide text-khushii-gold">
+              <h3 className="mt-4 break-words text-xl font-medium leading-tight tracking-wide text-khushii-gold md:text-2xl">
                 {item.value}
               </h3>
               <p className="mt-2 text-sm leading-6 text-khushii-gray">{item.label}</p>

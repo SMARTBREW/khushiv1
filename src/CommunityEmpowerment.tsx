@@ -27,12 +27,12 @@ export default function CommunityEmpowerment() {
           priority
           className="h-auto w-full"
         />
-        <div className="absolute inset-y-0 left-0 flex w-[46%] items-center px-6 md:px-14">
+        <div className="px-5 py-6 md:absolute md:inset-y-0 md:left-0 md:flex md:w-[46%] md:items-center md:px-14">
           <div>
-            <p className="text-2xl font-bold leading-tight text-white md:text-4xl lg:text-5xl">
+            <p className="text-xl font-bold leading-tight text-khushii-brown md:text-4xl md:text-white lg:text-5xl">
               {COMMUNITY.stat}
             </p>
-            <p className="mt-3 text-sm tracking-[0.14em] text-white md:text-base">
+            <p className="mt-3 text-sm tracking-[0.14em] text-khushii-gray md:text-base md:text-white">
               {COMMUNITY.statCredit}
             </p>
           </div>

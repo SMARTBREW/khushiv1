@@ -8,7 +8,9 @@ import { STORY_CARDS } from "./constants";
 
 export default function Story() {
   const { slug } = useParams();
-  const story = STORY_CARDS.find((item) => item.href === `/stories/${slug}`);
+  const story = STORY_CARDS.find(
+    (item) => item.href.replace(/\/$/, "") === `/stories/${slug}`.replace(/\/$/, ""),
+  );
   const article = story && "article" in story ? story.article : null;
 
   useEffect(() => {
@@ -25,7 +27,7 @@ export default function Story() {
       <section className="bg-white px-5 py-20">
         <p className="text-lg text-khushii-gray">This story is not available.</p>
         <Link
-          href="/what-we-do/success-stories"
+          href="/what-we-do/success-stories/"
           className="mt-6 inline-block text-sm text-khushii-gold-dark"
         >
           Back to stories
