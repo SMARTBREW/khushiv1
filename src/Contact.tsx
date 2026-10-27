@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
+import { motion, useReducedMotion } from "framer-motion";
 import { useForm } from "react-hook-form";
 
 import Image from "./components/image";
 import Link from "./components/link";
-import Reveal from "./components/reveal";
+import Reveal, { DrawLine } from "./components/reveal";
 import { SITE } from "./constants";
 
 const PAGE_TITLE = "Contact Us | Donation to Khushii NGO Under 80G | Khushii";
@@ -24,16 +25,18 @@ type ContactForm = {
   message: string;
 };
 
+const FORM_TO = "himanshu@khushii.org";
+
 const fieldClass =
   "w-full border border-[#f0e2c4] bg-[#fbf7f0] px-4 py-3 text-base text-khushii-brown placeholder:text-khushii-gray focus:border-khushii-gold focus:outline-none";
 
 export default function Contact() {
   const [notice, setNotice] = useState<string | null>(null);
+  const reduceMotion = useReducedMotion();
   const {
     register,
     handleSubmit,
-    reset,
-    formState: { errors, isSubmitting },
+    formState: { errors },
   } = useForm<ContactForm>({
     defaultValues: { name: "", email: "", subject: "", message: "" },
   });
@@ -45,19 +48,13 @@ export default function Contact() {
     };
   }, []);
 
-  const onSubmit = async (data: ContactForm) => {
-    setNotice(null);
-    const response = await fetch("/v1/contact", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data),
-    });
-    if (!response.ok) {
-      setNotice("Something went wrong. Please try again.");
-      return;
-    }
-    reset();
-    setNotice("Thanks. Your message has been sent.");
+  const onSubmit = (data: ContactForm) => {
+    const body = `Name: ${data.name}\nEmail: ${data.email}\n\n${data.message}`;
+    const mailto = `mailto:${FORM_TO}?subject=${encodeURIComponent(data.subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailto;
+    setNotice(
+      `Your email app is open with this message to ${FORM_TO}. Send it from there.`,
+    );
   };
 
   return (
@@ -144,12 +141,14 @@ export default function Contact() {
         className="scroll-mt-24 bg-white px-5 py-14 md:px-10 md:py-20"
       >
         <div className="mx-auto max-w-4xl">
-          <h2 className="text-2xl font-medium text-khushii-brown md:text-3xl">
-            Send us a message
-          </h2>
-          <span className="mt-4 block h-1 w-16 bg-khushii-gold" />
+          <Reveal>
+            <h2 className="text-2xl font-medium text-khushii-brown md:text-3xl">
+              Send us a message
+            </h2>
+            <DrawLine className="mt-4 block h-1 w-16 origin-left bg-khushii-gold" />
+          </Reveal>
           <form className="mt-10" onSubmit={handleSubmit(onSubmit)} noValidate>
-            <div className="grid gap-5 md:grid-cols-2">
+            <Reveal delay={0.08} className="grid gap-5 md:grid-cols-2">
               <div>
                 <input
                   aria-label="Name"
@@ -185,8 +184,8 @@ export default function Contact() {
                   <p className="mt-1 text-sm text-red-700">{errors.email.message}</p>
                 ) : null}
               </div>
-            </div>
-            <div className="mt-5">
+            </Reveal>
+            <Reveal delay={0.14} className="mt-5">
               <input
                 aria-label="Subject"
                 maxLength={120}
@@ -198,8 +197,8 @@ export default function Contact() {
               {errors.subject ? (
                 <p className="mt-1 text-sm text-red-700">{errors.subject.message}</p>
               ) : null}
-            </div>
-            <div className="mt-5">
+            </Reveal>
+            <Reveal delay={0.2} className="mt-5">
               <textarea
                 aria-label="Message"
                 maxLength={2000}
@@ -212,27 +211,38 @@ export default function Contact() {
               {errors.message ? (
                 <p className="mt-1 text-sm text-red-700">{errors.message.message}</p>
               ) : null}
-            </div>
-            <button
-              type="submit"
-              disabled={isSubmitting}
-              className="mt-8 border border-[#f0e2c4] border-l-4 border-l-khushii-gold bg-[#fbf7f0] px-8 py-3 text-base text-khushii-brown disabled:cursor-not-allowed disabled:opacity-70"
-            >
-              {isSubmitting ? "Sending..." : "Send"}
-            </button>
-            {notice ? (
-              <p className="mt-5 text-[#5f5f5f]" role="status">
-                {notice}
-              </p>
-            ) : null}
+            </Reveal>
+            <Reveal delay={0.26}>
+              <button
+                type="submit"
+                className="mt-8 border border-[#f0e2c4] border-l-4 border-l-khushii-gold bg-[#fbf7f0] px-8 py-3 text-base text-khushii-brown transition duration-300 hover:-translate-y-0.5 hover:border-khushii-gold"
+              >
+                Send
+              </button>
+              {notice ? (
+                <motion.p
+                  role="status"
+                  className="mt-5 text-[#5f5f5f]"
+                  initial={reduceMotion ? false : { opacity: 0, y: 8 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.35, ease: "easeOut" }}
+                >
+                  {notice}
+                </motion.p>
+              ) : null}
+            </Reveal>
           </form>
         </div>
       </section>
 
       <section className="bg-white px-5 py-16 md:px-10 md:py-24">
-        <ul className="mx-auto grid max-w-6xl gap-8 md:grid-cols-3">
-          {ENQUIRIES.map((item) => (
-            <li key={item.title} className="border border-[#f0e2c4] bg-[#fbf7f0] px-6 py-7">
+        <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-3">
+          {ENQUIRIES.map((item, index) => (
+            <Reveal
+              key={item.title}
+              delay={index * 0.08}
+              className="border border-[#f0e2c4] bg-[#fbf7f0] px-6 py-7"
+            >
               <h2 className="text-2xl font-medium text-khushii-brown md:text-3xl">
                 {item.title}
               </h2>
@@ -249,9 +259,9 @@ export default function Contact() {
                   {item.email}
                 </Link>
               </p>
-            </li>
+            </Reveal>
           ))}
-        </ul>
+        </div>
       </section>
     </>
   );
