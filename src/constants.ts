@@ -115,10 +115,16 @@ export const NAV_ITEMS: NavItem[] = [
 export const DONATE_OPTIONS = [
   {
     label: "Support our Remedial School",
-    href: "/building-brighter-future/",
+    href: "https://rzp.io/rzp/ssra01",
   },
-  { label: "Support A Child", href: "/donate-2/" },
-  { label: "Pads for Freedom", href: "/pads-for-freedom/" },
+  {
+    label: "Support A Child",
+    href: "https://rzp.io/rzp/EducateAnUnderprivilegedChild",
+  },
+  {
+    label: "Pads for Freedom",
+    href: "https://rzp.io/rzp/padsforfreedom",
+  },
 ] as const;
 
 export const FOOTER_QUICK_LINKS = [
@@ -150,13 +156,13 @@ export const GET_INVOLVED = [
 export const HERO_SLIDES = [
   {
     src: "/images/hero/newbnd.jpg",
-    href: "/donate-2/",
+    href: "https://rzp.io/rzp/EducateAnUnderprivilegedChild",
     alt: "Support a child - help Rekha continue with her education",
     caption: "Support a child",
   },
   {
     src: "/images/hero/newb2b2.jpg",
-    href: "/donate-2/",
+    href: "https://rzp.io/rzp/EducateAnUnderprivilegedChild",
     alt: "Support a child with KHUSHII",
     caption: "Support a child",
   },

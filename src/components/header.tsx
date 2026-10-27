@@ -267,6 +267,8 @@ export default function Header() {
                     <li key={option.href}>
                       <Link
                         href={option.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="block px-4 py-2.5 text-sm text-khushii-gray hover:bg-gray-200"
                       >
                         {option.label}

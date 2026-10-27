@@ -9,11 +9,13 @@ import Providers from "./components/providers";
 import Blog from "./Blog";
 import BlogPost from "./BlogPost";
 import Careers from "./Careers";
+import PadsForFreedom from "./PadsForFreedom";
 import Privacy from "./Privacy";
 import Education from "./Education";
 import Galleries from "./Galleries";
 import CommunityEmpowerment from "./CommunityEmpowerment";
 import Contact from "./Contact";
+import Donation from "./Donation";
 import Home from "./Home";
 import Kala from "./Kala";
 import Leadership from "./Leadership";
@@ -161,6 +163,8 @@ export default function App() {
           <Route path="/what-we-do/success-stories/" element={<Stories />} />
           <Route path="/stories/:slug/" element={<Story />} />
           <Route path="/contact/" element={<Contact />} />
+          <Route path="/donation/" element={<Donation />} />
+          <Route path="/pads-for-freedom/" element={<PadsForFreedom />} />
           <Route path="/galleries/" element={<Galleries />} />
           <Route path="/resources/annual-reports/" element={<Reports />} />
           <Route
