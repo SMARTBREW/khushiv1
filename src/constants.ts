@@ -153,6 +153,17 @@ export const GET_INVOLVED = [
   },
 ] as const;
 
+export const HERO_MOBILE_SLIDES = [
+  {
+    src: "/images/hero/impact-2024.jpg",
+    alt: "KHUSHII's impact in 2024: 2X academic growth, children reached from 92,903 to 200,233, and a 10% rise in parental engagement and student attendance",
+  },
+  {
+    src: "/images/hero/double-our-impact.jpg",
+    alt: "Your support has helped us double our impact: 13 states across India, 99 schools and learning centres, and 2,00,233 students in school",
+  },
+] as const;
+
 export const HERO_SLIDES = [
   {
     src: "/images/hero/newbnd.jpg",
