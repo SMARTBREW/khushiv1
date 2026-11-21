@@ -186,6 +186,8 @@ const FCRA_YEARS = [
     links: [
       ["FCRA Q1 2025-26", "/wp-content/uploads/2025/12/FCRA-Q1-Apr-Jun-2025.pdf"],
       ["FCRA Q2 2025-26", "/wp-content/uploads/2025/12/FCRA-Q2-July-Sept-2025.pdf"],
+      ["FCRA Q3 2025-26", "/wp-content/uploads/2026/11/FCRA-Q3-Oct-Dec-2025.pdf"],
+      ["FCRA Q4 2025-26", "/wp-content/uploads/2026/11/FCRA-Q4-January-to-March-2026.pdf"],
     ],
   },
 ] as const;
